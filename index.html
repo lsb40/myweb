@@ -20,7 +20,8 @@
     <a href="#hobbies">Hobbies</a>
     <a href="#leadership">Leadership</a>
     <a href="#contact">Contact</a>
-    <button id="themeToggle" aria-label="Toggle Dark Mode">🌙</button>
+    <button id="themeToggle" aria-label="Toggle Dark Mode">Dark Mode🌙</button>
+
   </nav>
 </header>
 
@@ -89,10 +90,19 @@
 
   </section>
 
-  <!-- Replace ONLY the #projects section with this -->
-<section id="projects" data-animate>
+  <section id="projects" data-animate>
     <h2>Projects</h2>
-  
+    <div class="project-card">
+      <h4>Decentralized Healthcare</h4>
+      <p class="project-desc">
+        Engineered a decentralized healthcare consulting web application leveraging React, Firebase Authentication, and Socket.io for secure, role-based access control and real-time, event-driven communication. Architected dynamic routing and stateful session management to support challenge creation, bid submission with temporal metadata, and per-project chat channels. Integrated modular UI components with conditional rendering and local persistence to enable authenticated user dashboards and lifecycle-managed challenge workflows.
+      </p>
+      <p>
+        <a href="https://github.com/lsb40/Decentralized-Healthcare" target="_blank" rel="noopener noreferrer">GitHub Repo</a> | 
+        <a href="https://decentralized-healthcare.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
+      </p>
+    </div>
+
     <div class="project-card">
       <h4>Sentiment Analysis Tool</h4>
       <p class="project-desc">Automated a movie sentiment analysis tool on Google Cloud Platform using NLP and machine learning, leveraging Cloud Functions and BigQuery for scalable data processing and storage.</p>
