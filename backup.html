@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Harshini Bandaru - Portfolio</title>
+<style>
+  /* Reset & base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background: #f0f5ff; /* lighter, bright background */
+    color: #222f5b; /* dark blue text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Header */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    gap: 2rem;
+    max-width: 900px;
+    width: 100%;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    color: #222f5b;
+  }
+  nav a.active,
+  nav a:hover {
+    border-bottom: 2px solid #1a73e8;
+  }
+
+  /* Main container */
+  main {
+    padding-top: 85px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Hero */
+  #hero {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  #hero img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1a73e8;
+    box-shadow: 0 0 12px #1a73e8aa;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  #hero img:hover {
+    transform: scale(1.05);
+  }
+  #hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.3rem;
+    color: #1a73e8;
+  }
+  #hero p {
+    font-size: 1.2rem;
+    color: #3a4a7f;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  section h2 {
+    color: #1a73e8;
+    font-size: 1.9rem;
+    margin-bottom: 1.3rem;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 6px;
+    font-weight: 700;
+  }
+
+  /* Education */
+  #education p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    color: #2c3e70;
+  }
+  #education strong {
+    color: #1a73e8;
+  }
+
+  /* Experience timeline style */
+    #experience {
+    position: relative;
+    padding-left: 40px;
+    margin-left: 20px;
+    border-left: 3px solid #1a73e8;
+    }
+
+    #experience .job-item {
+    position: relative;
+    margin-bottom: 3.2rem;
+    background: #f7fbff;
+    padding: 1.4rem 1.6rem 1.4rem 2.2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(26 115 232 / 0.15);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: default;
+    }
+
+    #experience .job-item:hover {
+    background-color: #e1eaff;
+    box-shadow: 0 8px 20px rgb(26 115 232 / 0.35);
+    }
+
+    #experience .job-item::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 24px;
+    width: 20px;
+    height: 20px;
+    background: #1a73e8;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 12px #1a73e8aa;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #experience .job-item:hover::before {
+    background: #2a8eff;
+    box-shadow: 0 0 20px #2a8effcc;
+    }
+
+    #experience h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1.35rem;
+    color: #1746c4;
+    font-weight: 700;
+    }
+
+    #experience .date-location {
+    font-size: 0.92rem;
+    color: #5670a2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    }
+
+    #experience ul {
+    margin: 0;
+    padding-left: 1.4rem;
+    list-style-type: disc;
+    color: #2c3e70;
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+
+    #experience ul li {
+    margin-bottom: 0.6rem;
+    }
+
+
+  /* Projects with cards */
+  #projects .project-card {
+    background: #e8f0fe;
+    border-radius: 12px;
+    padding: 1.4rem 1.8rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 10px rgb(26 115 232 / 0.2);
+    color: #1a237e;
+    transition: transform 0.3s ease;
+  }
+  #projects .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgb(26 115 232 / 0.4);
+  }
+  #projects .project-card h4 {
+    color: #1a73e8;
+    margin-bottom: 0.5rem;
+  }
+  #projects .project-desc {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  /* Skills */
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+  #skills .skill-group {
+    flex: 1 1 280px;
+    background: #e3eaff;
+    padding: 1.2rem 1.6rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgb(26 115 232 / 0.15);
+  }
+  #skills h3 {
+    margin-top: 0;
+    color: #1a73e8;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  #skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #2c3e70;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  #skills ul li {
+    margin-bottom: 0.4rem;
+  }
+
+  /* Leadership */
+  #leadership p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #2c3e70;
+    background: #e3eaff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgb(26 115 232 / 0.15);
+  }
+
+  /* Contact */
+  #contact p {
+    font-size: 1.1rem;
+    color: #2c3e70;
+    margin-bottom: 0.6rem;
+  }
+  #contact a {
+    color: #1a73e8;
+    font-weight: 600;
+  }
+
+  /* Floating contact bubble */
+  #contactBubble {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #1a73e8;
+    color: white;
+    font-size: 1.7rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 12px #1a73e8cc;
+    user-select: none;
+    z-index: 1100;
+    transition: background 0.3s ease;
+  }
+  #contactBubble:hover {
+    background: #3f83f8;
+  }
+  #contactPopup {
+    position: fixed;
+    bottom: 80px;
+    right: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem 1.4rem;
+    box-shadow: 0 8px 25px rgb(26 115 232 / 0.25);
+    max-width: 280px;
+    font-size: 0.95rem;
+    color: #2c3e70;
+    display: none;
+    z-index: 1101;
+  }
+  #contactPopup.visible {
+    display: block;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    #skills {
+      flex-direction: column;
+    }
+    #experience {
+      margin-left: 10px;
+    }
+    #experience::before {
+      left: 10px;
+    }
+    #experience .job-item {
+      margin-left: 40px;
+    }
+    header nav {
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#hero" class="active">Home</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="hero" data-animate>
+    <img src="img.png" alt="Harshini Bandaru" />
+    <h1>Hi! I'm Harshini</h1>
+    <p>Solutions Engineering Analyst at Deloitte passionate about building impactful technical solutions that drive real-world change.</p>
+  </section>
+
+  <section id="education" data-animate>
+    <h2>Education</h2>
+    <p><strong>University of Pittsburgh</strong>, Pittsburgh, PA</p>
+    <p>Bachelor of Science in Computer Science; Minor in Information Science (Aug 2021 - May 2024)</p>
+    <p><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Operating Systems, Database Management, Software Engineering, Cloud Computing, IT Project Management, Software Quality Assurance, and more.</p>
+    <p><strong>Awards/Honors:</strong> Dean's List; Joyce Tokar Scholar; John Hopkins Contact Tracing Certificate; AP Scholar with Distinction</p>
+  </section>
+
+  <section id="experience" data-animate>
+    <h2>Work Experience</h2>
+  
+    <div class="job-item">
+      <h3>Deloitte <span class="date-location">Harrisburg, PA | Oct 2024 - Present</span></h3>
+      <ul>
+        <li>Built Azure DevOps dashboards with SQL monitoring sprint velocity and backlog trends; led Payments Analytics proposal with KPI mockups and stakeholder deliverables.</li>
+        <li>Analyzed complex datasets to improve operational efficiency and system optimization for Government & Public Services clients.</li>
+        <li>Designed and prototyped a Figma mobile app for an AI solution; presented to PPMDs with product roadmap and go-to-market plan.</li>
+        <li>Engineered web architectures and process flows in Microsoft Visio; supported sprint planning and cross-team coordination.</li>
+      </ul>
+    </div>
+  
+    <div class="job-item">
+      <h3>Pentair <span class="date-location">Apex, NC | May 2023 - Aug 2023</span></h3>
+      <ul>
+        <li>Architected Android chatbot with Python backend and React Native frontend, integrating REST and OpenAI APIs.</li>
+        <li>Leveraged AWS Lambda for scalability; executed 200+ Postman tests and implemented Bootstrap UI.</li>
+      </ul>
+    </div>
+  
+    <div class="job-item">
+      <h3>Federated Hermes (ETL Dev Team) <span class="date-location">Pittsburgh, PA | Jan 2023 - Apr 2023</span></h3>
+      <ul>
+        <li>Developed ETL workflows using Boomi Integration Platform and Visual Studio automating business processes.</li>
+        <li>Tracked certificate expirations with 95% accuracy via database management and XML mapping.</li>
+        <li>Conducted code reviews to improve software quality and reliability.</li>
+      </ul>
+    </div>
+  
+    <div class="job-item">
+      <h3>Federated Hermes (ACTA-Portal Team) <span class="date-location">Warrendale, PA | Jun 2022 - Aug 2022</span></h3>
+      <ul>
+        <li>Increased data access and reporting efficiency using Power Apps and Power BI.</li>
+        <li>Reduced data processing time by 50% through integration and ETL optimizations.</li>
+        <li>Developed Java GUI project management app with SQL queries improving team productivity.</li>
+      </ul>
+    </div>
+  
+    <div class="job-item">
+      <h3>University of Pittsburgh <span class="date-location">Pittsburgh, PA | Jan 2022 - Apr 2022</span></h3>
+      <ul>
+        <li>Taught Java lectures on OOP and data structures to 20+ undergraduates.</li>
+        <li>Held weekly office hours to support student programming and debugging skills.</li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <section id="projects" data-animate>
+    <h2>Projects</h2>
+  
+    <div class="project-card">
+      <h4>Sentiment Analysis Tool</h4>
+      <p class="project-desc">Automated movie sentiment analysis on Google Cloud using NLP and machine learning with Cloud Functions and BigQuery for scalable data processing.</p>
+    </div>
+  
+    <div class="project-card">
+      <h4>MovieDB SQL Queries</h4>
+      <p class="project-desc">Analyzed actor collaborations, movie rankings, and directorial trends using SQL and Python over a SQLite movie dataset.</p>
+    </div>
+  
+    <div class="project-card">
+      <h4>Airline System</h4>
+      <p class="project-desc">Implemented Dijkstra's and BFS algorithms in a Java-based airline system for graph traversal and optimal route planning.</p>
+    </div>
+  
+    <div class="project-card">
+      <h4>Multi-Process & Multi-Threaded Web Servers</h4>
+      <p class="project-desc">Enhanced a single-threaded web server with fork() and pthreads, added synchronization and performance analysis tools to improve throughput.</p>
+    </div>
+  
+    <div class="project-card">
+      <h4>Double-Buffered Graphics Library</h4>
+      <p class="project-desc">Created a low-level graphics library in C using Linux system calls, ioctl, and memory-mapped framebuffer data for efficient drawing and input handling.</p>
+    </div>
+  
+    <div class="project-card">
+      <h4>Cloud Storage Static Site</h4>
+      <p class="project-desc">Built and deployed a static website using GCP’s Cloud Storage, Load Balancer, and GitHub Actions with Workload Identity Federation for secure CI/CD pipeline automation.</p>
+    </div>
+  
+    <div class="project-card">
+      <h4>Kubernetes WordPress Deployment</h4>
+      <p class="project-desc">Deployed WordPress with MySQL backend on a local Kubernetes cluster using KinD, with Nginx as ingress controller and resource limits on deployments.</p>
+    </div>
+  
+    <div class="project-card">
+      <h4>Docker Compose the Stack</h4>
+      <p class="project-desc">Configured a Flask backend, MongoDB database, and Nginx web server using Docker Compose with multi-network bridge setup and dependency management.</p>
+    </div>
+  
+    <div class="project-card">
+      <h4>Nested Virtualization on GCP</h4>
+      <p class="project-desc">Set up VMs within VMs using KVM and QEMU on Google Cloud’s Compute Engine, including workload testing on L2 virtual machines.</p>
+    </div>
+  </section>
+  
+
+  <section id="skills" data-animate>
+    <h2>Skills & Technologies</h2>
+
+    <div class="skill-group">
+      <h3>Programming Languages</h3>
+      <ul>
+        <li>Java, Python, C, C++, SQL, MySQL, R, JavaScript, CSS, HTML, SQLite</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <h3>Tools & Frameworks</h3>
+      <ul>
+        <li>Visual Studio, AWS Cloud, Google Cloud Platform, React Native, Bootstrap, Postman, Atom, Boomi Integration Platform, Power Apps, Power BI, BMC Workspace, Git, IntelliJ</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <h3>Technologies & Concepts</h3>
+      <ul>
+        <li>Object-Oriented Programming, Agile, VisualVM, Selenium, Flask, Lambda, Node.js, AngularJS, Workbench, Tableau, Microsoft Azure, Linux, Scrum, REST API, OpenAI API, Pandas, Scikit-learn, DOM, AJAX, SQLAlchemy, Kubernetes, KinD, Docker, Kubectl, Nginx, WordPress, MongoDB, Figma, Microsoft Visio, Azure DevOps</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="leadership" data-animate>
+    <h2>Leadership & Activities</h2>
+    <p>As Vice President of the Minorities Association in Computing, I managed sponsorship collaborations, coordinated reimbursements, organized training programs, and fostered lasting relationships with sponsors to support community growth and inclusion.</p>
+  </section>
+
+  <section id="contact" data-animate>
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations, job opportunities, or just to say hi!</p>
+    <p>Email: <a href="mailto:bharshini33@gmail.com">bharshini33@gmail.com</a></p>
+    <p>Phone: <a href="tel:+14123134578">412-313-4578</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer">harshini-bandaru</a></p>
+  </section>
+
+</main>
+
+<!-- Floating contact bubble -->
+<div id="contactBubble" title="Contact Info">✉️</div>
+<div id="contactPopup" aria-live="polite" role="dialog" aria-modal="true">
+  <p><strong>Email:</strong> bharshini33@gmail.com</p>
+  <p><strong>Phone:</strong> 412-313-4578</p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer">harshini-bandaru</a></p>
+</div>
+
+<script>
+  // Animate sections on scroll
+  const sections = document.querySelectorAll('[data-animate]');
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    {threshold: 0.15}
+  );
+  sections.forEach(section => observer.observe(section));
+
+  // Contact bubble toggle
+  const contactBubble = document.getElementById('contactBubble');
+  const contactPopup = document.getElementById('contactPopup');
+  contactBubble.addEventListener('click', () => {
+    contactPopup.classList.toggle('visible');
+  });
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      link.classList.add('active');
+      const target = document.querySelector(link.getAttribute('href'));
+      target.scrollIntoView({behavior: 'smooth'});
+    });
+  });
+</script>
+
+</body>
+</html>
