@@ -593,3 +593,27 @@ section h2 {
     max-width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  #skills {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .skill-group {
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  .skill-group h3 {
+    font-size: 1.08rem;
+    margin-bottom: 0.5rem;
+  }
+  .skill-bubbles {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .skill-bubbles span {
+    font-size: 1.05rem;
+    padding: 0.28em 1em;
+    margin-bottom: 0.18rem;
+  }
+}
