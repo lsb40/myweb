@@ -617,3 +617,28 @@ section h2 {
     margin-bottom: 0.18rem;
   }
 }
+
+@media (max-width: 600px) {
+  #projects {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  #projects .project-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1.1rem 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+  #projects .project-card h4 {
+    font-size: 1.08rem;
+  }
+  .tech-bubbles {
+    gap: 0.5rem;
+  }
+  .tech-bubbles span {
+    font-size: 0.98rem;
+    padding: 0.28em 1em;
+  }
+}
