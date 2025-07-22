@@ -11,6 +11,7 @@
 <body>
 
 <header>
+  <img src="img.png" alt="Harshini Bandaru" class="sidebar-profile" />
   <nav>
     <a href="#hero" class="active">Home</a>
     <a href="#education">Education</a>
@@ -21,20 +22,14 @@
     <a href="#leadership">Leadership</a>
     <a href="#contact">Contact</a>
     <button id="themeToggle" aria-label="Toggle Dark Mode">Dark Mode🌙</button>
-
   </nav>
 </header>
 
 <main>
 
   <section id="hero" data-animate>
-    <img src="img.png" alt="Harshini Bandaru" />
-    <h1>Hi! I'm Harshini</h1>
-    <p>My name is Harshini. I’m a Solutions Engineering Analyst at Deloitte and graduated from the University of Pittsburgh in May 2024 with a degree in Computer Science and a minor in Information Science. During my time there, I also served as a teaching assistant for a Java programming course, helping students strengthen their coding and problem-solving skills.
-
-      I have a strong interest in full-stack development and software engineering and have completed three internships working on projects ranging from chatbot applications to cloud-based systems. I enjoy learning new technologies and building practical, impactful solutions.
-      
-      In my free time, I enjoy playing tennis, lifting, baking, and going on hikes to explore nature.</p>
+    <h1>Harshini Bandaru</h1>
+    <p>I'm a Solutions Engineering Analyst at Deloitte, where I help public sector clients improve their operations by designing innovative solutions and supporting strategic decision-making. I graduated from the University of Pittsburgh in May 2024 with a degree in Computer Science and a minor in Information Science. My experience includes teaching Java as a TA, working on projects from chatbots to cloud systems, and collaborating with teams to deliver practical solutions. Outside of work, I enjoy tennis, lifting, baking, and hiking.</p>
   </section>
 
   <section id="education" data-animate>
@@ -101,20 +96,25 @@
       <p class="project-desc">
         Engineered a decentralized healthcare consulting web application leveraging React, Firebase Authentication, and Socket.io for secure, role-based access control and real-time, event-driven communication. Architected dynamic routing and stateful session management to support challenge creation, bid submission with temporal metadata, and per-project chat channels. Integrated modular UI components with conditional rendering and local persistence to enable authenticated user dashboards and lifecycle-managed challenge workflows.
       </p>
+      <div class="tech-bubbles">
+        <span>React</span><span>Firebase Auth</span><span>Socket.io</span><span>JavaScript</span><span>Node.js</span>
+      </div>
       <p>
         <a href="https://decentralized-healthcare.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a> |
         <a href="https://github.com/lsb40/Decentralized-Healthcare" target="_blank" rel="noopener noreferrer">GitHub Repo</a>  
-
       </p>
     </div>
 
     <div class="project-card">
       <h4>LifeHub</h4>
       <p class="project-desc">
-        A full-stack lifestyle tracking web app built with React and FastAPI. It tracks diet, steps, and core health metrics, integrating Spoonacular API for nutrition data.
+        Developed a full-stack personal health dashboard using React and FastAPI, integrating the USDA FoodData Central API for dynamic nutrition search and logging. Implemented RESTful endpoints with in-memory data storage to track diet, activity, mood, and wellness metrics, coupled with responsive UI features like calorie goal progress and multi-tab navigation. Configured CORS and deployed frontend/backend separately on Render to enable seamless cross-origin communication, focusing on user-centric design and real-time data aggregation for holistic lifestyle monitoring.
       </p>
+      <div class="tech-bubbles">
+        <span>React</span><span>FastAPI</span><span>Python</span><span>USDA API</span><span>JavaScript</span>
+      </div>
       <p>
-        <a href="https://lifehub-mu.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a> | 
+        <a href="https://lifehub-frontend.onrender.com/" target="_blank" rel="noopener noreferrer">Live Site</a> | 
         <a href="https://github.com/lsb40/LifeHub" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
       </p>
     </div>
@@ -122,8 +122,11 @@
     <div class="project-card">
       <h4>Personal Portfolio Website</h4>
       <p class="project-desc">
-        This personal portfolio site showcasing my education, experience, projects, and skills. Built with HTML, CSS, and JavaScript featuring dark mode, smooth scrolling, and responsive design.
+        Designed and developed a responsive personal portfolio website showcasing my education, experience, projects, and technical skills. Built with HTML, CSS, and JavaScript, it features dark mode toggling, smooth scrolling navigation, and mobile-friendly layouts to enhance user experience.
       </p>
+      <div class="tech-bubbles">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
       <p>
         <a href="https://myweb-harshini-bandarus-projects.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a> | 
         <a href="https://github.com/lsb40/myweb" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -132,52 +135,102 @@
 
     <div class="project-card">
       <h4>Sentiment Analysis Tool</h4>
-      <p class="project-desc">Automated a movie sentiment analysis tool on Google Cloud Platform using NLP and machine learning, leveraging Cloud Functions and BigQuery for scalable data processing and storage.</p>
+      <p class="project-desc">
+        Automated a movie sentiment analysis pipeline on Google Cloud Platform by leveraging Natural Language Processing and machine learning. Utilized Cloud Functions for serverless data ingestion and BigQuery for scalable data processing and interactive querying, enabling real-time insights on user movie reviews.
+      </p>
+      <div class="tech-bubbles">
+        <span>GCP</span><span>Python</span><span>Cloud Functions</span><span>BigQuery</span><span>NLP</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>MovieDB SQL Queries</h4>
-      <p class="project-desc">Employed Python and SQLite for SQL queries analyzing actor collaborations, movie rankings, and directorial patterns in a movie database.</p>
+      <p class="project-desc">
+        Leveraged Python and SQLite to perform complex SQL queries on a movie database. Analyzed patterns in actor collaborations, movie rankings, and director styles to generate actionable insights and visualize trends in filmography data.
+      </p>
+      <div class="tech-bubbles">
+        <span>Python</span><span>SQLite</span><span>SQL</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>Multi-Process and Multi-Threaded Web Servers</h4>
-      <p class="project-desc">Enhanced a single-threaded web server using fork()/pthread_create(), added synchronization, and analyzed CPU time/throughput.</p>
+      <p class="project-desc">
+        Enhanced a basic single-threaded web server in C by implementing multi-processing with fork() and multi-threading with pthread_create(). Incorporated synchronization primitives to ensure thread safety, then benchmarked CPU time and throughput to analyze performance improvements.
+      </p>
+      <div class="tech-bubbles">
+        <span>C</span><span>Linux</span><span>Multi-threading</span><span>Multi-processing</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>Double-Buffered Graphics Library</h4>
-      <p class="project-desc">Created a low-level graphics library in C using Linux system calls for rendering and input handling.</p>
+      <p class="project-desc">
+        Implemented a low-level graphics library in C utilizing Linux system calls to provide double buffering for smooth rendering. Managed input handling and efficient drawing operations to enable flicker-free graphical applications.
+      </p>
+      <div class="tech-bubbles">
+        <span>C</span><span>Linux</span><span>Graphics</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>Airline System</h4>
-      <p class="project-desc">Developed a Java-based Airline System using Dijkstra’s and BFS for route planning and graph traversal.</p>
+      <p class="project-desc">
+        Developed a Java-based airline management system incorporating graph algorithms like Dijkstra’s shortest path and Breadth-First Search (BFS) for route planning. Enabled efficient scheduling, booking, and navigation of flight paths within the network.
+      </p>
+      <div class="tech-bubbles">
+        <span>Java</span><span>SQL</span><span>Graph Algorithms</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>Nested Virtualization on GCP</h4>
-      <p class="project-desc">Set up VMs within VMs using KVM and QEMU on Google Cloud to simulate nested virtualization.</p>
+      <p class="project-desc">
+        Configured nested virtualization by running virtual machines inside virtual machines on Google Cloud Platform using KVM and QEMU. Demonstrated the ability to simulate complex multi-layered virtual environments for testing and development purposes.
+      </p>
+      <div class="tech-bubbles">
+        <span>GCP</span><span>KVM</span><span>QEMU</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>Dockerize the App</h4>
-      <p class="project-desc">Built a multi-architecture Docker image for a Node.js app enabling consistent deployment across environments.</p>
+      <p class="project-desc">
+        Created a multi-architecture Docker image for a Node.js application to ensure consistent execution across different CPU platforms. Streamlined deployment processes and improved environment parity using containerization best practices.
+      </p>
+      <div class="tech-bubbles">
+        <span>Node.js</span><span>Docker</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>Docker Compose the Stack</h4>
-      <p class="project-desc">Set up a full stack (Flask, Nginx, MongoDB) using Docker Compose with separate services, networks, and volumes.</p>
+      <p class="project-desc">
+        Configured a multi-service Docker Compose setup to orchestrate a Flask backend API, Nginx reverse proxy, and MongoDB database. Defined isolated networks and persistent volumes to facilitate scalable development and deployment with clean separation of concerns.
+      </p>
+      <div class="tech-bubbles">
+        <span>Flask</span><span>Nginx</span><span>MongoDB</span><span>Docker Compose</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>Kubernetes WordPress</h4>
-      <p class="project-desc">Deployed WordPress with MySQL on Kubernetes using KinD (Kubernetes in Docker), with service discovery and persistent volumes.</p>
+      <p class="project-desc">
+        Deployed a production-ready WordPress application on a local Kubernetes cluster using KinD (Kubernetes in Docker). Set up MySQL as a persistent backend with persistent volume claims, configured service discovery for internal communication, and ensured data durability across pod restarts.
+      </p>
+      <div class="tech-bubbles">
+        <span>Kubernetes</span><span>WordPress</span><span>MySQL</span><span>KinD</span>
+      </div>
     </div>
   
     <div class="project-card">
       <h4>Cloud Storage Static Site</h4>
-      <p class="project-desc">Deployed a static website to Google Cloud Storage with CI/CD automation via GitHub Actions.</p>
+      <p class="project-desc">
+        Deployed a static website to Google Cloud Storage, integrating Continuous Integration/Continuous Deployment (CI/CD) pipelines with GitHub Actions. Automated build and deployment workflows to enable seamless and rapid updates to the site.
+      </p>
+      <div class="tech-bubbles">
+        <span>GCP</span><span>CI/CD</span><span>GitHub Actions</span>
+      </div>
     </div>
   </section>
   
@@ -187,23 +240,23 @@
 
     <div class="skill-group">
       <h3>Programming Languages</h3>
-      <ul>
-        <li>Java, Python, C, C++, SQL, MySQL, R, JavaScript, CSS, HTML, SQLite</li>
-      </ul>
+      <div class="skill-bubbles">
+        <span>Java</span><span>Python</span><span>C</span><span>C++</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>HTML</span><span>CSS</span><span>R</span><span>Bash</span><span>JSON</span><span>XML</span>
+      </div>
     </div>
 
     <div class="skill-group">
       <h3>Tools & Frameworks</h3>
-      <ul>
-        <li>Visual Studio, AWS Cloud, Google Cloud Platform, React Native, Bootstrap, Postman, Atom, Boomi Integration Platform, Power Apps, Power BI, BMC Workspace, Git, IntelliJ</li>
-      </ul>
+      <div class="skill-bubbles">
+        <span>React</span><span>React Native</span><span>FastAPI</span><span>Flask</span><span>Node.js</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Material UI</span><span>Figma</span><span>Firebase (Auth & Firestore)</span><span>Socket.IO</span><span>Postman</span><span>Docker</span><span>Docker Compose</span><span>Kubernetes</span><span>GitHub Actions</span><span>Uvicorn</span><span>Boomi</span><span>Power Apps</span><span>Power BI</span><span>Git</span><span>IntelliJ</span><span>Visual Studio</span><span>Atom</span><span>SQLAlchemy</span><span>MongoDB</span><span>MySQL</span><span>SQLite</span><span>Microsoft Visio</span><span>BMC Workspace</span><span>Jira</span><span>Confluence</span>
+      </div>
     </div>
 
     <div class="skill-group">
       <h3>Technologies & Concepts</h3>
-      <ul>
-        <li>Object-Oriented Programming, Agile, VisualVM, Selenium, Flask, Lambda, Node.js, AngularJS, Workbench, Tableau, Microsoft Azure, Linux, Scrum, REST API, OpenAI API, Pandas, Scikit-learn, DOM, AJAX, SQLAlchemy, Kubernetes, KinD, Docker, Kubectl, Nginx, WordPress, MongoDB, Figma, Microsoft Visio, Azure DevOps</li>
-      </ul>
+      <div class="skill-bubbles">
+        <span>Cloud Platforms (AWS, Google Cloud Platform, Azure DevOps)</span><span>RESTful API Design</span><span>CI/CD Pipelines</span><span>Authentication & Role-Based Access Control</span><span>CORS Configuration</span><span>Object-Oriented Programming (OOP)</span><span>Agile/Scrum</span><span>State Management (Context API, Local Storage)</span><span>System Design & Architecture</span><span>Testing & Debugging</span><span>Data Visualization</span><span>ETL Pipelines</span><span>Virtualization (KVM, QEMU)</span><span>DevOps Practices</span>
+      </div>
     </div>
   </section>
 
@@ -227,17 +280,23 @@
 
   <section id="contact" data-animate>
     <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mblkgyrk" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
     <p>Feel free to reach out for collaborations, job opportunities, or just to say hi!</p>
     <p>Email: <a href="mailto:bharshini33@gmail.com">bharshini33@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer">harshini-bandaru</a></p>
   </section>
+  
 
 </main>
 
 <div id="contactBubble" title="Contact Info" role="button" tabindex="0">✉️</div>
 <div id="contactPopup" aria-live="polite" role="dialog" aria-modal="true" tabindex="-1">
   <p><strong>Email:</strong> bharshini33@gmail.com</p>
-  <p><strong>Phone:</strong> 412-313-4578</p>
   <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer">harshini-bandaru</a></p>
 </div>
 
