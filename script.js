@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+// Header scroll effect
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
 // Animate sections on scroll
 const sections = document.querySelectorAll('[data-animate]');
 const observer = new IntersectionObserver(
