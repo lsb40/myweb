@@ -9,14 +9,14 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Parallax effect for hero content - moves upward to stay visible
-const heroContent = document.querySelector('.hero-content');
+// Parallax effect - background stays static, all content moves up together
+const main = document.querySelector('main');
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
-  const parallaxSpeed = -0.3; // Negative value makes it move upward
+  const parallaxSpeed = -0.3; // Negative value makes content move upward
   
-  if (heroContent) {
-    heroContent.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+  if (main) {
+    main.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
   }
 });
 
