@@ -35,7 +35,7 @@ a:hover {
 
 /* --- SIDEBAR ENHANCEMENTS --- */
 header {
-  width: 100%;
+  width: 100vw;
   height: auto;
   position: sticky;
   top: 0;
@@ -55,6 +55,7 @@ header {
   z-index: 1000;
   border-bottom: none;
   transition: all 0.3s ease;
+  margin-left: calc(-50vw + 50%);
 }
 
 header.scrolled {
@@ -457,8 +458,8 @@ section h2 {
   justify-content: center;
   text-align: center;
   margin-bottom: 3.5rem;
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
+  max-width: none;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
               url('Pittsburgh_284869670.jpg');
   background-size: 100% auto;
@@ -473,6 +474,7 @@ section h2 {
   margin-top: -2rem;
   padding-top: 6rem;
   position: relative;
+  margin-left: calc(-50vw + 50%);
 }
 
 .hero-content {
