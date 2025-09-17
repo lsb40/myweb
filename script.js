@@ -9,6 +9,17 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Parallax effect for hero content
+const heroContent = document.querySelector('.hero-content');
+window.addEventListener('scroll', () => {
+  const scrolled = window.pageYOffset;
+  const parallaxSpeed = 0.5; // Adjust this value to control parallax speed
+  
+  if (heroContent) {
+    heroContent.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+  }
+});
+
 // Animate sections on scroll
 const sections = document.querySelectorAll('[data-animate]');
 const observer = new IntersectionObserver(

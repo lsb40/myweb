@@ -466,15 +466,18 @@ section h2 {
   border-radius: 0;
   box-shadow: none;
   padding: 4rem 2rem;
-  overflow: visible;
+  overflow: hidden;
   min-height: 100vh;
   margin-top: -2rem;
   padding-top: 6rem;
+  position: relative;
 }
 
 .hero-content {
   max-width: 1000px;
   width: 100%;
+  transform: translateY(0);
+  transition: transform 0.1s ease-out;
 }
 
 .profile-section {
