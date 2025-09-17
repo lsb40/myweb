@@ -443,36 +443,33 @@ section h2 {
 }
 
 .hero-profile {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #ffffff;
+  border: 8px solid #ffffff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   margin-bottom: 1.5rem;
 }
 
 #hero h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   color: #ffffff;
   letter-spacing: 0.01em;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#hero p {
-  font-size: 1.3rem;
-  color: #ffffff;
-  margin-top: 0;
+.job-title {
+  font-size: 1.5rem;
+  font-weight: 400;
   margin-bottom: 0;
-  max-width: 800px;
-  line-height: 1.7;
+  color: #ffffff;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
 }
 
 @media (max-width: 900px) {
@@ -481,15 +478,14 @@ section h2 {
     min-height: 70vh;
   }
   .hero-profile {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
   #hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
-  #hero p {
-    font-size: 1.1rem;
-    max-width: 100%;
+  .job-title {
+    font-size: 1.2rem;
   }
 }
 
