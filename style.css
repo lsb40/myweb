@@ -14,12 +14,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-              url('Pittsburgh_284869670.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: #f9fafb;
   color: #1f2937;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -45,7 +40,12 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  background: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+              url('Pittsburgh_284869670.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: row;
@@ -457,12 +457,19 @@ section h2 {
   margin-bottom: 3.5rem;
   width: 100%;
   max-width: 100%;
-  background: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+              url('Pittsburgh_284869670.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   border-radius: 0;
   box-shadow: none;
   padding: 4rem 2rem;
   overflow: visible;
-  min-height: 80vh;
+  min-height: 100vh;
+  margin-top: -2rem;
+  padding-top: 6rem;
 }
 
 .hero-content {
