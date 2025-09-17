@@ -2,16 +2,24 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
               url('Pittsburgh_284869670.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   color: #1f2937;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
