@@ -108,14 +108,14 @@
     <div class="project-card">
       <h4>LifeHub</h4>
       <p class="project-desc">
-        Developed a full-stack personal health dashboard using React and FastAPI, integrating the USDA FoodData Central API for dynamic nutrition search and logging. Implemented RESTful endpoints with in-memory data storage to track diet, activity, mood, and wellness metrics, coupled with responsive UI features like calorie goal progress and multi-tab navigation. Configured CORS and deployed frontend/backend separately on Render to enable seamless cross-origin communication, focusing on user-centric design and real-time data aggregation for holistic lifestyle monitoring.
+        LifeHub is a full-stack health & wellness platform: a vanilla ES6 + Tailwind SPA that renders Canvas-based analytics and works offline-first with local persistence and eventual sync to a Node/Express API. The service exposes versioned REST contracts (/api/v1) with strict request/response schema validation, idempotent writes, and a normalized error envelope; JWT auth and CORS hardening enforce per-user isolation; structured JSON logging and a /health probe support ops. Consistent resource models span nutrition, water, exercise, and mood. CI/CD ships from GitHub to Vercel with environment-scoped config and SPA routing; the repo is Docker-ready for multi-stage builds and a clean lift to managed Postgres with pooled connections as usage scales.
       </p>
       <div class="tech-bubbles">
         <span>React</span><span>FastAPI</span><span>Python</span><span>USDA API</span><span>JavaScript</span>
       </div>
       <p>
-        <a href="https://lifehub-frontend.onrender.com/" target="_blank" rel="noopener noreferrer">Live Site</a> | 
-        <a href="https://github.com/lsb40/LifeHub" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        <a href="https://lifehub-three.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a> | 
+        <a href="https://github.com/lsb40/LifeHub" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
     </div>
 
