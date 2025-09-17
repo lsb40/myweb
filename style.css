@@ -42,7 +42,7 @@ header {
   left: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
               url('Pittsburgh_284869670.jpg');
-  background-size: 100% auto;
+  background-size: 110% auto;
   background-position: center top;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -462,7 +462,7 @@ section h2 {
   max-width: none;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
               url('Pittsburgh_284869670.jpg');
-  background-size: 100% auto;
+  background-size: 110% auto;
   background-position: center top;
   background-attachment: fixed;
   background-repeat: no-repeat;
