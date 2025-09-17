@@ -9,14 +9,14 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Parallax effect for hero content
-const heroContent = document.querySelector('.hero-content');
+// Layered scroll effect - content sections slide up over hero
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
-  const parallaxSpeed = 0.5; // Adjust this value to control parallax speed
+  const hero = document.querySelector('#hero');
   
-  if (heroContent) {
-    heroContent.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+  if (hero) {
+    // Keep the hero background fixed while content slides over it
+    hero.style.transform = `translateY(${scrolled * 0.3}px)`;
   }
 });
 
