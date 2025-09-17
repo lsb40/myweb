@@ -9,11 +9,11 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Parallax effect for hero content
+// Parallax effect for hero content - moves upward to stay visible
 const heroContent = document.querySelector('.hero-content');
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
-  const parallaxSpeed = 0.5; // Adjust this value to control parallax speed
+  const parallaxSpeed = -0.3; // Negative value makes it move upward
   
   if (heroContent) {
     heroContent.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
