@@ -7,7 +7,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background: #f9fafb;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+              url('Pittsburgh_284869670.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #1f2937;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -38,7 +42,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   box-shadow: none;
   z-index: 1000;
   border-bottom: none;
@@ -51,22 +55,6 @@ header.scrolled {
   border-bottom: 1px solid #e5e7eb;
 }
 
-.sidebar-profile {
-  display: block;
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
-  margin: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-}
-
-header.scrolled .sidebar-profile {
-  border: 2px solid #e5e7eb;
-  box-shadow: none;
-}
 
 nav {
   margin-top: 0;
@@ -181,9 +169,10 @@ section {
   transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   padding: 2rem;
-  border-radius: 0;
+  border-radius: 8px;
   background: #ffffff;
-  border: none;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 section.visible {
   opacity: 1;
@@ -460,11 +449,7 @@ section h2 {
   margin-bottom: 3.5rem;
   width: 100%;
   max-width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-              url('Pittsburgh_284869670.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: transparent;
   border-radius: 0;
   box-shadow: none;
   padding: 4rem 2rem;
