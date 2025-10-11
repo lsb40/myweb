@@ -230,7 +230,8 @@ section h2 {
   position: relative;
   padding: 3rem 2rem 25rem 2rem;
   overflow: visible;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
+  margin-left: 15%;
   max-width: 1200px;
   display: flex;
   justify-content: center;
