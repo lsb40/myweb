@@ -216,288 +216,54 @@ section h2 {
   color: #1a73e8;
 }
 
-/* Experience timeline */
-#experience {
-  position: relative;
-  padding-left: 0;
-  margin-left: 0;
-  border-left: none;
-  background: none;
-  margin-bottom: 3rem;
-}
-/* Horizontal Timeline Container */
-.timeline-horizontal {
-  position: relative;
-  padding: 3rem 2rem 25rem 2rem;
-  overflow: visible;
-  margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1.5rem;
-  flex-wrap: nowrap;
+/* Experience cards - same style as projects */
+.job-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  color: #1f2937;
+  transition: box-shadow 0.2s ease;
+  border: 1px solid #e5e7eb;
 }
 
-/* Horizontal line */
-.timeline-line {
-  position: absolute;
-  top: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 1000px;
-  height: 4px;
-  background: linear-gradient(90deg, #1a73e8 0%, #4285f4 50%, #93c5fd 100%);
-  border-radius: 2px;
-  box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
-  z-index: 1;
+.job-card:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Individual timeline item */
-.timeline-item-h {
-  position: relative;
-  flex: 0 1 auto;
-  min-width: 160px;
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Timeline node (dot + label) */
-.timeline-node {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-/* Timeline dot */
-.timeline-dot {
-  width: 28px;
-  height: 28px;
-  background: linear-gradient(135deg, #1a73e8, #4285f4);
-  border: 5px solid white;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.2),
-              0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+.job-card h4 {
+  color: #1a73e8;
   margin-bottom: 1rem;
-}
-
-.timeline-item-h:hover .timeline-dot {
-  transform: scale(1.4);
-  box-shadow: 0 0 0 8px rgba(26, 115, 232, 0.3),
-              0 6px 20px rgba(26, 115, 232, 0.5);
-}
-
-/* Timeline label (company + date) */
-.timeline-label {
-  text-align: center;
-  background: white;
-  padding: 0.8rem 1.2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  min-width: 180px;
-  width: 180px;
-}
-
-.timeline-item-h:hover .timeline-label {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 24px rgba(26, 115, 232, 0.25);
-  border-color: #1a73e8;
-}
-
-.company-name {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  color: #1a73e8;
-  margin-bottom: 0.3rem;
-  line-height: 1.3;
+  display: block;
 }
 
-.date-range {
-  font-size: 0.85rem;
+.job-meta {
+  display: block;
+  font-size: 0.95rem;
   color: #5f6368;
-  font-weight: 600;
-}
-
-/* Popup (hidden by default) */
-.timeline-popup {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-  background: white;
-  border-radius: 12px;
-  padding: 1.8rem 2rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  border: 2px solid #1a73e8;
-  z-index: 100;
-  width: 420px;
-  min-height: 350px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  pointer-events: none;
-  margin-top: 1rem;
-}
-
-/* Show popup on hover */
-.timeline-item-h:hover .timeline-popup {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
-}
-
-/* Arrow pointing upward to the node */
-.timeline-popup::before {
-  content: '';
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 12px 12px 12px;
-  border-color: transparent transparent #1a73e8 transparent;
-}
-
-.timeline-popup::after {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent white transparent;
-}
-
-/* Popup content styling */
-.popup-header {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.8rem;
-  border-bottom: 2px solid #e8f0fe;
-  padding-bottom: 0.8rem;
-}
-
-.popup-header h3 {
-  color: #1a73e8;
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0 0 0.4rem 0;
-  letter-spacing: 0.02em;
-}
-
-.popup-role {
-  font-size: 1rem;
-  color: #5f6368;
-  font-weight: 600;
-  font-style: italic;
-  line-height: 1.4;
-}
-
-.popup-date {
-  display: inline-block;
-  background: linear-gradient(135deg, #e8f0fe, #d2e3fc);
-  color: #1967d2;
-  padding: 0.4rem 0.9rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-top: 0.5rem;
-  margin-bottom: 0.4rem;
-  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.15);
-}
-
-.popup-location {
-  display: inline-block;
-  color: #5f6368;
-  font-size: 0.85rem;
   font-weight: 500;
-  margin-bottom: 1rem;
-  padding-left: 0.3rem;
+  margin-top: 0.3rem;
+  font-style: italic;
 }
 
-.timeline-popup ul {
-  margin: 1rem 0 0 0;
-  padding-left: 1.3rem;
+.job-card ul {
+  margin: 0;
+  padding-left: 1.5rem;
   list-style-type: disc;
 }
 
-.timeline-popup li {
+.job-card li {
   color: #3c4043;
   margin-bottom: 0.6rem;
-  line-height: 1.5;
-  font-size: 0.9rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
-.timeline-popup li::marker {
+.job-card li::marker {
   color: #1a73e8;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .timeline-horizontal {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem 1rem;
-  }
-  
-  .timeline-line {
-    display: none;
-  }
-  
-  .timeline-item-h {
-    min-width: 200px;
-  }
-  
-  .timeline-popup {
-    min-width: 300px;
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 768px) {
-  .timeline-horizontal {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-  }
-  
-  .timeline-item-h {
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .timeline-popup {
-    position: static;
-    transform: none;
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .timeline-popup::before,
-  .timeline-popup::after {
-    display: none;
-  }
-  
-  .timeline-item-h:hover .timeline-popup {
-    transform: none;
-  }
 }
 
 /* Projects with cards */
