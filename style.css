@@ -223,38 +223,35 @@ section h2 {
   margin-left: 0;
   border-left: none;
   background: none;
+  margin-bottom: 3rem;
 }
 /* Horizontal Timeline Container */
 .timeline-horizontal {
   position: relative;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 25rem 2rem;
   overflow: visible;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
 }
 
 /* Horizontal line */
 .timeline-line {
   position: absolute;
   top: 5rem;
-  left: 2rem;
-  right: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1000px;
   height: 4px;
   background: linear-gradient(90deg, #1a73e8 0%, #4285f4 50%, #93c5fd 100%);
   border-radius: 2px;
   box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
   z-index: 1;
-}
-
-/* Timeline items container - horizontal flexbox */
-.timeline-horizontal {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  position: relative;
-  padding: 3rem 2rem 2rem 2rem;
-  flex-wrap: nowrap;
 }
 
 /* Individual timeline item */
