@@ -27,8 +27,52 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 .dark-mode {
-  background: #121212;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+.dark-mode section {
+  background: #000000;
+  color: #ffffff;
+}
+
+.dark-mode section h2 {
+  color: #ffffff;
+  border-bottom-color: #333333;
+}
+
+.dark-mode .job-card,
+.dark-mode #projects .project-card {
+  background: #000000;
+  color: #ffffff;
+  border-color: #333333;
+}
+
+.dark-mode .job-card h4,
+.dark-mode #projects .project-card h4 {
+  color: #ffffff;
+}
+
+.dark-mode .job-meta,
+.dark-mode .project-desc {
+  color: #cccccc;
+}
+
+.dark-mode .job-card li,
+.dark-mode #projects .project-card li,
+.dark-mode #projects .project-card p {
   color: #e0e0e0;
+}
+
+.dark-mode .job-card a,
+.dark-mode #projects .project-card a {
+  color: #60a5fa;
+}
+
+.dark-mode .tech-bubbles span {
+  background: #1a1a1a;
+  color: #60a5fa;
+  border-color: #333333;
 }
 a {
   color: #1a73e8;
@@ -89,6 +133,7 @@ nav a {
   color: #ffffff;
   width: auto;
   display: block;
+  cursor: default;
   position: relative;
   background: none;
   text-decoration: none;
