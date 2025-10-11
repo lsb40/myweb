@@ -240,6 +240,17 @@ section h2 {
   display: block;
 }
 
+.job-card h4 a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.job-card h4 a:hover {
+  color: #1557b0;
+  text-decoration: underline;
+}
+
 .job-meta {
   display: block;
   font-size: 0.95rem;
