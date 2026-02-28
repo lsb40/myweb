@@ -3,134 +3,270 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Harshini Bandaru - Portfolio</title>
+  <title>Harshini Bandaru - Solutions Engineering Analyst</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="#hero" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#contact">Contact</a>
-    <button id="themeToggle" aria-label="Toggle Dark Mode">Dark Mode🌙</button>
-  </nav>
-</header>
+<aside class="sidebar">
+  <div class="sidebar-content">
+    <div class="logo">
+      <h3>HB</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#hero" class="nav-link active">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-text">Home</span>
+      </a>
+      <a href="#about" class="nav-link">
+        <span class="nav-icon">👤</span>
+        <span class="nav-text">About</span>
+      </a>
+      <a href="#education" class="nav-link">
+        <span class="nav-icon">🎓</span>
+        <span class="nav-text">Education</span>
+      </a>
+      <a href="#experience" class="nav-link">
+        <span class="nav-icon">💼</span>
+        <span class="nav-text">Experience</span>
+      </a>
+      <a href="#projects" class="nav-link">
+        <span class="nav-icon">🚀</span>
+        <span class="nav-text">Projects</span>
+      </a>
+      <a href="#skills" class="nav-link">
+        <span class="nav-icon">⚡</span>
+        <span class="nav-text">Skills</span>
+      </a>
+      <a href="#hobbies" class="nav-link">
+        <span class="nav-icon">🎨</span>
+        <span class="nav-text">Hobbies</span>
+      </a>
+      <a href="#leadership" class="nav-link">
+        <span class="nav-icon">👥</span>
+        <span class="nav-text">Leadership</span>
+      </a>
+      <a href="#contact" class="nav-link">
+        <span class="nav-icon">✉️</span>
+        <span class="nav-text">Contact</span>
+      </a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+      <span class="theme-icon">🌙</span>
+    </button>
+  </div>
+</aside>
 
-<main>
+<button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 
-  <section id="hero" data-animate>
-    <div class="hero-content">
-      <div class="profile-section">
-        <img src="img.png" alt="Harshini Bandaru" class="hero-profile" />
-        <h1><strong>Harshini Bandaru</strong></h1>
-        <h2 class="job-title">Solutions Engineering Analyst at Deloitte</h2>
-        <a href="#about" class="enter-portfolio-btn">Enter Portfolio</a>
+<button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<main class="main-content">
+
+  <section id="hero" class="hero-section" data-animate>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">Harshini Bandaru</h1>
+          <p class="hero-subtitle">Solutions Engineering Analyst at Deloitte</p>
+          <p class="hero-description">
+            Passionate about designing innovative solutions and supporting strategic decision-making for public sector clients. Based in Harrisburg, PA.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+          <div class="hero-social">
+            <a href="mailto:bharshini33@gmail.com" class="social-link" aria-label="Email">📧</a>
+            <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">💼</a>
+            <a href="https://github.com/lsb40" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">🔗</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="img.png" alt="Harshini Bandaru" class="profile-img" />
+            <div class="image-decoration"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="about" data-animate>
-    <h2>About Me</h2>
-    <p>Hi there! My name is Harshini, and I am a Solutions Engineering Analyst at Deloitte, where I help public sector clients improve their operations by designing innovative solutions and supporting strategic decision-making. I graduated from the University of Pittsburgh in May 2024 with a degree in Computer Science and a minor in Information Science. My experience includes teaching Java as a TA, working on projects from chatbots to cloud systems, and collaborating with teams to deliver practical solutions. Outside of work, I enjoy tennis, lifting, baking, and hiking.</p>
-  </section>
-
-  <section id="education" data-animate>
-    <h2>Education</h2>
-    <p><strong>University of Pittsburgh</strong>, Pittsburgh, PA</p>
-    <p>Bachelor of Science in Computer Science; Minor in Information Science (Aug 2021 - May 2024)</p>
-    <p><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Operating Systems, Database Management, Software Engineering, Human-Centered Systems, Web Applications, Cloud Computing, Systems Software, IT Project Management, Software Quality Assurance, Discrete Structures, Formal Methods in Computer Science, Computer Organization and Assembly Language, Data Science, Social Implications of Computer Science, Analysis of Information Systems</p>
-    <p><strong>Awards/Honors:</strong> Dean's List; Joyce Tokar Scholar; John Hopkins Contact Tracing Certificate; AP Scholar with Distinction</p>
-  </section>
-
-  <section id="experience" data-animate>
-    <h2>Work Experience</h2>
-
-    <div class="job-card">
-      <h4>Deloitte <span class="job-meta">Solutions Engineering Analyst | Oct 2024 - Present | Harrisburg, PA</span></h4>
-      <ul>
-        <li>Built Azure DevOps dashboards with SQL monitoring sprint velocity and backlog trends; led Payments Analytics proposal with KPI mockups and stakeholder deliverables.</li>
-        <li>Analyzed complex datasets to improve operational efficiency and system optimization for Government & Public Services clients.</li>
-        <li>Designed and prototyped a Figma mobile app for an AI solution; presented to PPMDs with product roadmap and go-to-market plan.</li>
-        <li>Engineered web architectures and process flows in Microsoft Visio; supported sprint planning and cross-team coordination.</li>
-      </ul>
-    </div>
-
-    <div class="job-card">
-      <h4>Pentair <span class="job-meta">Software Engineering Intern (IoT Team) | May 2023 - Aug 2023 | Apex, NC</span></h4>
-      <ul>
-        <li>Architected Android chatbot with Python backend and React Native frontend, integrating REST and OpenAI APIs.</li>
-        <li>Leveraged AWS Lambda for scalability; executed 200+ Postman tests and implemented Bootstrap UI.</li>
-      </ul>
-    </div>
-
-    <div class="job-card">
-      <h4>Federated Hermes <span class="job-meta">Application Developer Intern (ETL Dev Team) | Jan 2023 - Apr 2023 | Pittsburgh, PA</span></h4>
-      <ul>
-        <li>Developed ETL workflows using Boomi Integration Platform and Visual Studio automating business processes.</li>
-        <li>Tracked certificate expirations with 95% accuracy via database management and XML mapping.</li>
-        <li>Conducted code reviews to improve software quality and reliability.</li>
-      </ul>
-    </div>
-
-    <div class="job-card">
-      <h4>Federated Hermes <span class="job-meta">Application Developer Intern (ACTA-Portal Team) | Jun 2022 - Aug 2022 | Warrendale, PA</span></h4>
-      <ul>
-        <li>Increased data access and reporting efficiency using Power Apps and Power BI.</li>
-        <li>Reduced data processing time by 50% through integration and ETL optimizations.</li>
-        <li>Developed Java GUI project management app with SQL queries improving team productivity.</li>
-      </ul>
-    </div>
-
-    <div class="job-card">
-      <h4>University of Pittsburgh <span class="job-meta">Undergraduate Teaching Assistant | Jan 2022 - Apr 2022 | Pittsburgh, PA</span></h4>
-      <ul>
-        <li>Taught Java lectures on OOP and data structures to 20+ undergraduates.</li>
-        <li>Held weekly office hours to support student programming and debugging skills.</li>
-        <li><a href="https://www.cs.pitt.edu/people/undergraduate-students/harshini-bandaru" target="_blank" rel="noopener noreferrer">University Profile</a></li>
-      </ul>
-    </div>
-
-  </section>
-
-  <section id="projects" data-animate>
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h4>LifeHub</h4>
-      <p class="project-desc">
-        LifeHub is a full-stack health & wellness platform: a vanilla ES6 + Tailwind SPA that renders Canvas-based analytics and works offline-first with local persistence and eventual sync to a Node/Express API. The service exposes versioned REST contracts (/api/v1) with strict request/response schema validation, idempotent writes, and a normalized error envelope; JWT auth and CORS hardening enforce per-user isolation; structured JSON logging and a /health probe support ops. Consistent resource models span nutrition, water, exercise, and mood. CI/CD ships from GitHub to Vercel with environment-scoped config and SPA routing; the repo is Docker-ready for multi-stage builds and a clean lift to managed Postgres with pooled connections as usage scales.
-      </p>
-      <div class="tech-bubbles">
-        <span>JavaScript (ES6)</span><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span><span>Canvas API</span><span>Node.js</span><span>Express.js</span><span>REST API (v1)</span><span>JWT Auth</span><span>Docker</span><span>PostgreSQL</span><span>Git</span>
+  <section id="about" class="section" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get To Know Me</span>
+        <h2 class="section-title">About Me</h2>
       </div>
-      <p>
-        <a href="https://lifehub-three.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a> | 
-        <a href="https://github.com/lsb40/LifeHub" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
-    </div>
-
-    <div class="project-card">
-      <h4>Decentralized Healthcare</h4>
-      <p class="project-desc">
-        Engineered a decentralized healthcare consulting web application leveraging React, Firebase Authentication, and Socket.io for secure, role-based access control and real-time, event-driven communication. Architected dynamic routing and stateful session management to support challenge creation, bid submission with temporal metadata, and per-project chat channels. Integrated modular UI components with conditional rendering and local persistence to enable authenticated user dashboards and lifecycle-managed challenge workflows.
-      </p>
-      <div class="tech-bubbles">
-        <span>JavaScript (ES6+)</span><span>React</span><span>Node.js</span><span>Express.js</span><span>Socket.io</span><span>Firebase Authentication</span><span>Firebase Firestore</span>
+      <div class="about-content">
+        <p>Hi there! My name is Harshini, and I am a Solutions Engineering Analyst at Deloitte, where I help public sector clients improve their operations by designing innovative solutions and supporting strategic decision-making. I graduated from the University of Pittsburgh in May 2024 with a degree in Computer Science and a minor in Information Science. My experience includes teaching Java as a TA, working on projects from chatbots to cloud systems, and collaborating with teams to deliver practical solutions. Outside of work, I enjoy tennis, lifting, baking, and hiking.</p>
       </div>
-      <p>
-        <a href="https://decentralized-healthcare.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a> |
-        <a href="https://github.com/lsb40/Decentralized-Healthcare" target="_blank" rel="noopener noreferrer">GitHub Repo</a>  
-      </p>
     </div>
+  </section>
+
+  <section id="education" class="section section-alt" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-card">
+        <div class="education-header">
+          <div>
+            <h3 class="education-school">University of Pittsburgh</h3>
+            <p class="education-degree">Bachelor of Science in Computer Science</p>
+            <p class="education-minor">Minor in Information Science</p>
+          </div>
+          <div class="education-meta">
+            <span class="education-location">📍 Pittsburgh, PA</span>
+            <span class="education-date">📅 Aug 2021 - May 2024</span>
+          </div>
+        </div>
+        <div class="education-details">
+          <div class="detail-block">
+            <h4>Relevant Coursework</h4>
+            <p>Data Structures and Algorithms, Operating Systems, Database Management, Software Engineering, Human-Centered Systems, Web Applications, Cloud Computing, Systems Software, IT Project Management, Software Quality Assurance, Discrete Structures, Formal Methods in Computer Science, Computer Organization and Assembly Language, Data Science, Social Implications of Computer Science, Analysis of Information Systems</p>
+          </div>
+          <div class="detail-block">
+            <h4>Awards & Honors</h4>
+            <p>Dean's List • Joyce Tokar Scholar • John Hopkins Contact Tracing Certificate • AP Scholar with Distinction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Professional Journey</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Oct 2024 - Present</span>
+            <h3 class="timeline-title">Solutions Engineering Analyst</h3>
+            <h4 class="timeline-company">Deloitte • Harrisburg, PA</h4>
+            <ul class="timeline-description">
+              <li>Built Azure DevOps dashboards with SQL monitoring sprint velocity and backlog trends; led Payments Analytics proposal with KPI mockups and stakeholder deliverables.</li>
+              <li>Analyzed complex datasets to improve operational efficiency and system optimization for Government & Public Services clients.</li>
+              <li>Designed and prototyped a Figma mobile app for an AI solution; presented to PPMDs with product roadmap and go-to-market plan.</li>
+              <li>Engineered web architectures and process flows in Microsoft Visio; supported sprint planning and cross-team coordination.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">May 2023 - Aug 2023</span>
+            <h3 class="timeline-title">Software Engineering Intern (IoT Team)</h3>
+            <h4 class="timeline-company">Pentair • Apex, NC</h4>
+            <ul class="timeline-description">
+              <li>Architected Android chatbot with Python backend and React Native frontend, integrating REST and OpenAI APIs.</li>
+              <li>Leveraged AWS Lambda for scalability; executed 200+ Postman tests and implemented Bootstrap UI.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2023 - Apr 2023</span>
+            <h3 class="timeline-title">Application Developer Intern (ETL Dev Team)</h3>
+            <h4 class="timeline-company">Federated Hermes • Pittsburgh, PA</h4>
+            <ul class="timeline-description">
+              <li>Developed ETL workflows using Boomi Integration Platform and Visual Studio automating business processes.</li>
+              <li>Tracked certificate expirations with 95% accuracy via database management and XML mapping.</li>
+              <li>Conducted code reviews to improve software quality and reliability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jun 2022 - Aug 2022</span>
+            <h3 class="timeline-title">Application Developer Intern (ACTA-Portal Team)</h3>
+            <h4 class="timeline-company">Federated Hermes • Warrendale, PA</h4>
+            <ul class="timeline-description">
+              <li>Increased data access and reporting efficiency using Power Apps and Power BI.</li>
+              <li>Reduced data processing time by 50% through integration and ETL optimizations.</li>
+              <li>Developed Java GUI project management app with SQL queries improving team productivity.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2022 - Apr 2022</span>
+            <h3 class="timeline-title">Undergraduate Teaching Assistant</h3>
+            <h4 class="timeline-company">University of Pittsburgh • Pittsburgh, PA</h4>
+            <ul class="timeline-description">
+              <li>Taught Java lectures on OOP and data structures to 20+ undergraduates.</li>
+              <li>Held weekly office hours to support student programming and debugging skills.</li>
+              <li><a href="https://www.cs.pitt.edu/people/undergraduate-students/harshini-bandaru" target="_blank" rel="noopener noreferrer">University Profile</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-alt" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>LifeHub</h3>
+            <div class="project-links">
+              <a href="https://lifehub-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🔗 Live</a>
+              <a href="https://github.com/lsb40/LifeHub" target="_blank" rel="noopener noreferrer" class="project-link">💻 Code</a>
+            </div>
+          </div>
+          <p class="project-desc">
+            LifeHub is a full-stack health & wellness platform: a vanilla ES6 + Tailwind SPA that renders Canvas-based analytics and works offline-first with local persistence and eventual sync to a Node/Express API. The service exposes versioned REST contracts (/api/v1) with strict request/response schema validation, idempotent writes, and a normalized error envelope; JWT auth and CORS hardening enforce per-user isolation; structured JSON logging and a /health probe support ops. Consistent resource models span nutrition, water, exercise, and mood. CI/CD ships from GitHub to Vercel with environment-scoped config and SPA routing; the repo is Docker-ready for multi-stage builds and a clean lift to managed Postgres with pooled connections as usage scales.
+          </p>
+          <div class="tech-stack">
+            <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Tailwind</span><span>Node.js</span><span>Express</span><span>REST API</span><span>JWT</span><span>Docker</span><span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Decentralized Healthcare</h3>
+            <div class="project-links">
+              <a href="https://decentralized-healthcare.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🔗 Live</a>
+              <a href="https://github.com/lsb40/Decentralized-Healthcare" target="_blank" rel="noopener noreferrer" class="project-link">💻 Code</a>
+            </div>
+          </div>
+          <p class="project-desc">
+            Engineered a decentralized healthcare consulting web application leveraging React, Firebase Authentication, and Socket.io for secure, role-based access control and real-time, event-driven communication. Architected dynamic routing and stateful session management to support challenge creation, bid submission with temporal metadata, and per-project chat channels. Integrated modular UI components with conditional rendering and local persistence to enable authenticated user dashboards and lifecycle-managed challenge workflows.
+          </p>
+          <div class="tech-stack">
+            <span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>Socket.io</span><span>Firebase Auth</span><span>Firestore</span>
+          </div>
+        </div>
 
     <div class="project-card">
       <h4>Personal Portfolio Website</h4>
@@ -248,70 +384,162 @@
   </section>
   
 
-  <section id="skills" data-animate>
-    <h2>Skills & Technologies</h2>
+  <section id="skills" class="section" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Tech Stack</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
 
-    <div class="skill-group">
-      <h3>Programming Languages</h3>
-      <div class="skill-bubbles">
-        <span>Java</span><span>Python</span><span>C</span><span>C++</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>HTML</span><span>CSS</span><span>R</span><span>Bash</span><span>JSON</span><span>XML</span>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-list">
+            <span class="skill-item">Java</span>
+            <span class="skill-item">Python</span>
+            <span class="skill-item">C</span>
+            <span class="skill-item">C++</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">TypeScript</span>
+            <span class="skill-item">SQL</span>
+            <span class="skill-item">HTML</span>
+            <span class="skill-item">CSS</span>
+            <span class="skill-item">R</span>
+            <span class="skill-item">Bash</span>
+            <span class="skill-item">JSON</span>
+            <span class="skill-item">XML</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Frameworks</h3>
+          <div class="skill-list">
+            <span class="skill-item">React</span>
+            <span class="skill-item">React Native</span>
+            <span class="skill-item">FastAPI</span>
+            <span class="skill-item">Flask</span>
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Bootstrap</span>
+            <span class="skill-item">Tailwind CSS</span>
+            <span class="skill-item">Material UI</span>
+            <span class="skill-item">Figma</span>
+            <span class="skill-item">Firebase</span>
+            <span class="skill-item">Socket.IO</span>
+            <span class="skill-item">Postman</span>
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">Docker Compose</span>
+            <span class="skill-item">Kubernetes</span>
+            <span class="skill-item">GitHub Actions</span>
+            <span class="skill-item">Boomi</span>
+            <span class="skill-item">Power Apps</span>
+            <span class="skill-item">Power BI</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">IntelliJ</span>
+            <span class="skill-item">Visual Studio</span>
+            <span class="skill-item">MongoDB</span>
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">SQLite</span>
+            <span class="skill-item">Microsoft Visio</span>
+            <span class="skill-item">Jira</span>
+            <span class="skill-item">Confluence</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Technologies & Concepts</h3>
+          <div class="skill-list">
+            <span class="skill-item">AWS</span>
+            <span class="skill-item">Google Cloud Platform</span>
+            <span class="skill-item">Azure DevOps</span>
+            <span class="skill-item">RESTful API Design</span>
+            <span class="skill-item">CI/CD Pipelines</span>
+            <span class="skill-item">Authentication & RBAC</span>
+            <span class="skill-item">Object-Oriented Programming</span>
+            <span class="skill-item">Agile/Scrum</span>
+            <span class="skill-item">State Management</span>
+            <span class="skill-item">System Design</span>
+            <span class="skill-item">Testing & Debugging</span>
+            <span class="skill-item">Data Visualization</span>
+            <span class="skill-item">ETL Pipelines</span>
+            <span class="skill-item">Virtualization</span>
+            <span class="skill-item">DevOps Practices</span>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="skill-group">
-      <h3>Tools & Frameworks</h3>
-      <div class="skill-bubbles">
-        <span>React</span><span>React Native</span><span>FastAPI</span><span>Flask</span><span>Node.js</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Material UI</span><span>Figma</span><span>Firebase (Auth & Firestore)</span><span>Socket.IO</span><span>Postman</span><span>Docker</span><span>Docker Compose</span><span>Kubernetes</span><span>GitHub Actions</span><span>Uvicorn</span><span>Boomi</span><span>Power Apps</span><span>Power BI</span><span>Git</span><span>IntelliJ</span><span>Visual Studio</span><span>Atom</span><span>SQLAlchemy</span><span>MongoDB</span><span>MySQL</span><span>SQLite</span><span>Microsoft Visio</span><span>BMC Workspace</span><span>Jira</span><span>Confluence</span>
+  <section id="hobbies" class="section section-alt" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Beyond Work</span>
+        <h2 class="section-title">Hobbies & Interests</h2>
+      </div>
+      <ul class="hobby-list">
+        <li>🎾 Tennis</li>
+        <li>🏋️‍♀️ Lifting</li>
+        <li>🥾 Hiking</li>
+        <li>🧁 Baking</li>
+        <li>🎨 Painting</li>
+        <li>🧶 DIY Crafts</li>
+        <li>🏓 Pickleball</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="leadership" class="section" data-animate>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Community Involvement</span>
+        <h2 class="section-title">Leadership & Activities</h2>
+      </div>
+      <div class="leadership-content">
+        <p>As Vice President of the Minorities Association in Computing, I managed sponsorship collaborations, coordinated reimbursements, organized training programs, and fostered lasting relationships with sponsors to support community growth and inclusion.</p>
       </div>
     </div>
+  </section>
 
-    <div class="skill-group">
-      <h3>Technologies & Concepts</h3>
-      <div class="skill-bubbles">
-        <span>Cloud Platforms (AWS, Google Cloud Platform, Azure DevOps)</span><span>RESTful API Design</span><span>CI/CD Pipelines</span><span>Authentication & Role-Based Access Control</span><span>CORS Configuration</span><span>Object-Oriented Programming (OOP)</span><span>Agile/Scrum</span><span>State Management (Context API, Local Storage)</span><span>System Design & Architecture</span><span>Testing & Debugging</span><span>Data Visualization</span><span>ETL Pipelines</span><span>Virtualization (KVM, QEMU)</span><span>DevOps Practices</span>
+  <section id="contact" class="section section-alt" data-animate>
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>Feel free to reach out for collaborations, job opportunities, or just to say hi!</p>
+          <div class="contact-links">
+            <a href="mailto:bharshini33@gmail.com" class="contact-link">
+              <span>📧</span>
+              <span>bharshini33@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span>💼</span>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <form action="https://formspree.io/f/mblkgyrk" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
       </div>
     </div>
   </section>
-
-  <section id="hobbies" data-animate>
-    <h2>Hobbies & Interests</h2>
-    <ul class="hobby-list">
-      <li>🎾 Tennis</li>
-      <li>🏋️‍♀️ Lifting</li>
-      <li>🥾 Hiking</li>
-      <li>🧁 Baking</li>
-      <li>🎨 Painting</li>
-      <li>🧶 DIY Crafts</li>
-      <li>🏓 Pickleball</li>
-    </ul>
-  </section>
-
-  <section id="leadership" data-animate>
-    <h2>Leadership & Activities</h2>
-    <p>As Vice President of the Minorities Association in Computing, I managed sponsorship collaborations, coordinated reimbursements, organized training programs, and fostered lasting relationships with sponsors to support community growth and inclusion.</p>
-  </section>
-
-  <section id="contact" data-animate>
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mblkgyrk" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>Feel free to reach out for collaborations, job opportunities, or just to say hi!</p>
-    <p>Email: <a href="mailto:bharshini33@gmail.com">bharshini33@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer">harshini-bandaru</a></p>
-  </section>
-  
 
 </main>
-
-<div id="contactBubble" title="Contact Info" role="button" tabindex="0">✉️</div>
-<div id="contactPopup" aria-live="polite" role="dialog" aria-modal="true" tabindex="-1">
-  <p><strong>Email:</strong> <a href="mailto:bharshini33@gmail.com">bharshini33@gmail.com</a></p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer">harshini-bandaru</a></p>
-</div>
 
 <script src="script.js"></script>
 </body>
