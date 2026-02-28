@@ -14,12 +14,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-              url('Pittsburgh_284869670.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: #f3f4f6;
   color: #1f2937;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.7;
@@ -29,12 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .dark-mode {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url('Pittsburgh_284869670.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: #111827;
   color: #f3f4f6;
 }
 
@@ -656,12 +646,12 @@ section h2 {
   margin-bottom: 3.5rem;
   width: 100vw;
   max-width: none;
-  background: transparent;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 0;
   box-shadow: none;
   padding: 4rem 2rem;
   overflow: hidden;
-  min-height: 150vh;
+  min-height: 100vh;
   margin-top: -2rem;
   padding-top: 6rem;
   position: relative;
@@ -742,7 +732,7 @@ section h2 {
 @media (max-width: 900px) {
   #hero {
     padding: 2rem 1rem;
-    min-height: 70vh;
+    min-height: 80vh;
   }
   .hero-profile {
     width: 200px;
