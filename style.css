@@ -599,10 +599,16 @@ body {
 }
 
 /* ===== ABOUT SECTION ===== */
+#about {
+  background: var(--bg-primary);
+  position: relative;
+  z-index: 10;
+}
+
 .about-content p {
   font-size: 1.125rem;
   line-height: 1.8;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   max-width: 800px;
 }
 
