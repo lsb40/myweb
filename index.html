@@ -1,576 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Harshini Bandaru - Software Engineer II</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Harshini Bandaru, a Software Engineer II specializing in backend services, data pipelines, cloud platforms, and AI-enabled applications.">
+  <meta name="theme-color" content="#0d1f33">
+  <title>Harshini Bandaru | Software Engineer II</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<aside class="sidebar">
-  <div class="sidebar-content">
-    <div class="logo">
-      <h3>HB</h3>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#hero" aria-label="Harshini Bandaru, home">
+        <span class="brand-mark" aria-hidden="true">HB</span>
+        <span class="brand-name">Harshini Bandaru</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume" href="HarshiniBandaruResume.pdf" target="_blank" rel="noopener noreferrer">Resume <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
-    <nav class="sidebar-nav">
-      <a href="#hero" class="nav-link active">
-        <span class="nav-icon">🏠</span>
-        <span class="nav-text">Home</span>
-      </a>
-      <a href="#about" class="nav-link">
-        <span class="nav-icon">👤</span>
-        <span class="nav-text">About</span>
-      </a>
-      <a href="#education" class="nav-link">
-        <span class="nav-icon">🎓</span>
-        <span class="nav-text">Education</span>
-      </a>
-      <a href="#experience" class="nav-link">
-        <span class="nav-icon">💼</span>
-        <span class="nav-text">Experience</span>
-      </a>
-      <a href="#projects" class="nav-link">
-        <span class="nav-icon">🚀</span>
-        <span class="nav-text">Projects</span>
-      </a>
-      <a href="#skills" class="nav-link">
-        <span class="nav-icon">⚡</span>
-        <span class="nav-text">Skills</span>
-      </a>
-      <a href="#hobbies" class="nav-link">
-        <span class="nav-icon">🎨</span>
-        <span class="nav-text">Hobbies</span>
-      </a>
-      <a href="#leadership" class="nav-link">
-        <span class="nav-icon">👥</span>
-        <span class="nav-text">Leadership</span>
-      </a>
-      <a href="#contact" class="nav-link">
-        <span class="nav-icon">✉️</span>
-        <span class="nav-text">Contact</span>
-      </a>
-    </nav>
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-      <span class="theme-icon">🌙</span>
-    </button>
-  </div>
-</aside>
+  </header>
 
-<button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-
-<main class="main-content">
-
-  <section id="hero" class="hero-section" data-animate>
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-title">Harshini Bandaru</h1>
-          <p class="hero-subtitle">Software Engineer II at Deloitte</p>
-          <p class="hero-description">
-            Passionate about designing innovative solutions and supporting strategic decision-making for public sector clients. Based in Chicago, IL.
-          </p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            <a href="#projects" class="btn btn-secondary">View Projects</a>
+  <main id="main-content">
+    <section class="hero" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software Engineer II · Chicago, Illinois</p>
+          <h1>Building dependable systems from data to deployment.</h1>
+          <p class="hero-lead">I’m Harshini Bandaru, a software engineer at Deloitte focused on backend services, data pipelines, cloud platforms, and practical AI-enabled tools.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View selected work</a>
+            <a class="button button-secondary" href="mailto:bharshini33@gmail.com">Get in touch</a>
           </div>
-          <div class="hero-social">
-            <a href="mailto:bharshini33@gmail.com" class="social-link" aria-label="Email">📧</a>
-            <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">💼</a>
-            <a href="https://github.com/lsb40" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">🔗</a>
+          <div class="hero-links" aria-label="Professional links">
+            <a href="mailto:bharshini33@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/lsb40" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <div class="hero-image">
-          <div class="image-wrapper">
-            <img src="img.png" alt="Harshini Bandaru" class="profile-img" />
-            <div class="image-decoration"></div>
-          </div>
+
+        <aside class="hero-summary reveal" aria-label="Career highlights">
+          <p class="summary-label">Selected impact</p>
+          <dl class="impact-list">
+            <div>
+              <dt>200+</dt>
+              <dd>dashboard users supported</dd>
+            </div>
+            <div>
+              <dt>75%</dt>
+              <dd>faster KPI dashboard loads</dd>
+            </div>
+            <div>
+              <dt>30%</dt>
+              <dd>runtime reduction through Azure VM tuning</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split-section">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Profile</p>
+          <h2>Engineering with clarity and measurable outcomes.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p>I build reliable software that connects backend architecture, data, and user needs. At Deloitte, I develop Python and SQL data pipelines, own PostgreSQL services for enterprise analytics, and design AI-assisted workflows with validation and logging built in.</p>
+          <p>My foundation spans cloud infrastructure, APIs, full-stack development, database systems, and concurrent programming. I earned a B.S. in Computer Science with a minor in Information Science from the University of Pittsburgh.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Get To Know Me</span>
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="about-content">
-        <p>Hi there! My name is Harshini, and I am a Software Engineer II at Deloitte based in Chicago, IL. Passionate about designing innovative solutions and supporting strategic decision-making for public sector clients. I graduated from the University of Pittsburgh in May 2024 with a degree in Computer Science and a minor in Information Science. My technical expertise spans full-stack development, cloud infrastructure (Azure/AWS), CI/CD pipelines, microservices architecture, and agile methodologies, with hands-on experience in Java, Python, React, and database optimization. Outside of work, I enjoy tennis, lifting, baking, and hiking.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="section section-alt" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Academic Background</span>
-        <h2 class="section-title">Education</h2>
-      </div>
-      <div class="education-card">
-        <div class="education-header">
+    <section class="section section-muted" id="education">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="section-kicker">Education</p>
+          <h2>Academic foundation</h2>
+        </div>
+        <article class="education-card reveal">
           <div>
-            <h3 class="education-school">University of Pittsburgh</h3>
+            <h3>University of Pittsburgh</h3>
             <p class="education-degree">Bachelor of Science in Computer Science</p>
-            <p class="education-minor">Minor in Information Science</p>
+            <p>Minor in Information Science · GPA: 3.9/4.0</p>
           </div>
           <div class="education-meta">
-            <span class="education-location">📍 Pittsburgh, PA</span>
-            <span class="education-date">📅 Aug 2021 - May 2024</span>
+            <p>Pittsburgh, Pennsylvania</p>
+            <p>August 2021 – May 2024</p>
           </div>
-        </div>
-        <div class="education-details">
-          <div class="detail-block">
-            <h4>Relevant Coursework</h4>
-            <p>Data Structures and Algorithms, Operating Systems, Database Management, Software Engineering, Human-Centered Systems, Web Applications, Cloud Computing, Systems Software, IT Project Management, Software Quality Assurance, Discrete Structures, Formal Methods in Computer Science, Computer Organization and Assembly Language, Data Science, Social Implications of Computer Science, Analysis of Information Systems</p>
+          <div class="education-detail">
+            <span>Relevant coursework</span>
+            <p>Cloud Computing, Database Systems, Operating Systems, Algorithms &amp; Data Structures</p>
           </div>
-          <div class="detail-block">
-            <h4>Awards & Honors</h4>
-            <p>Dean's List • Joyce Tokar Scholar • John Hopkins Contact Tracing Certificate • AP Scholar with Distinction</p>
-          </div>
-        </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="experience" class="section" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Professional Journey</span>
-        <h2 class="section-title">Work Experience</h2>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">October 2024 - Present</span>
-            <h3 class="timeline-title">Software Engineer II</h3>
-            <h4 class="timeline-company">Deloitte Chicago, IL</h4>
-            <ul class="timeline-description">
-              <li>Designed and maintained scalable backend data pipelines using Python, SQL, and Azure DevOps, powering production analytics systems across 3 applications and improving operational efficiency by ~20%.</li>
-              <li>Built and owned backend services and data workflows for KPI tracking and decision systems, ensuring data correctness, reliability, and low-latency access for enterprise-scale usage.</li>
-              <li>Led infrastructure and performance optimization for VM workloads, improving system throughput, resource utilization, and cost efficiency through architecture-level enhancements.</li>
-              <li>Architected an LLM-powered backend service using Python and APIs, driving end-to-end system design for automated user story generation and accelerating product requirement workflows.</li>
-            </ul>
-          </div>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="section-kicker">Experience</p>
+          <h2>Professional experience</h2>
+          <p>Backend engineering, cloud systems, data platforms, and technical leadership across enterprise environments.</p>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">May 2023 - August 2023</span>
-            <h3 class="timeline-title">Software Engineering Intern</h3>
-            <h4 class="timeline-company">Pentair Apex, NC</h4>
-            <ul class="timeline-description">
-              <li>Architected an AI chatbot using React Native frontend and Python backend, integrating REST APIs, OpenAI APIs, and AWS Lambda to enable scalable, serverless inference and modular system design.</li>
-              <li>Integrated chatbot with IoT system components, improving request handling reliability and reducing latency by ~25% under load, while validating performance using 200+ Postman test cases, reducing integration defects by ~30%.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">January 2023 - April 2023</span>
-            <h3 class="timeline-title">Software Engineering Intern</h3>
-            <h4 class="timeline-company">Federated Hermes Pittsburgh, PA</h4>
-            <ul class="timeline-description">
-              <li>Streamlined certificate-expiration tracking by building Boomi ETL flows, XML data mappings, transformation logic, and automated validations, significantly improving data accuracy and reducing manual intervention by ~95%.</li>
-              <li>Reviewed code across environments using Git and Visual Studio, strengthening deployment reliability and quality.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">June 2022 - August 2022</span>
-            <h3 class="timeline-title">Software Engineering Intern</h3>
-            <h4 class="timeline-company">Federated Hermes Warrendale, PA</h4>
-            <ul class="timeline-description">
-              <li>Redesigned data access and reporting by building Power Apps dashboards and Power BI reports on optimized ETL pipelines, increasing accessibility by 25%, efficiency by 20%, and cutting processing time by 50%.</li>
-              <li>Developed a Java GUI project management tool using Postgres for task scheduling, meetings, and deadlines, with documentation.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">January 2022 - April 2022</span>
-            <h3 class="timeline-title">Undergraduate Teaching Assistant</h3>
-            <h4 class="timeline-company">University of Pittsburgh Pittsburgh, PA</h4>
-            <ul class="timeline-description">
-              <li>Led weekly lectures for 20+ undergraduates on OOP and data structures, coaching students to improve problem-solving.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section section-alt" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Portfolio</span>
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-header">
-            <h3>ClosetLocal</h3>
-            <div class="project-links">
-              <a href="https://closetlocal-mobile.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🔗 Live</a>
-              <a href="https://github.com/lsb40/ClosetLocal" target="_blank" rel="noopener noreferrer" class="project-link">💻 Code</a>
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <div class="experience-meta">
+              <p class="experience-date">Oct 2024 – Present</p>
+              <p>Chicago, Illinois</p>
             </div>
-          </div>
-          <p class="project-desc">
-            ClosetLocal is a privacy-first virtual wardrobe, laundry tracker, and context-aware outfit recommendation platform built with Expo, React Native, TypeScript, and FastAPI. Users can import clothing photos, automatically classify garments with locally executed CLIP and SegFormer models, and store visual embeddings alongside wardrobe metadata in SQLite. A lifecycle engine tracks wears and laundry status through transactional updates, while the recommendation system combines clean-item availability, local cosine-similarity ranking, and live Open-Meteo conditions to generate explainable outfits. Background processing, retryable jobs, validated uploads, optional API-key protection, typed REST contracts, and comprehensive automated tests provide production-minded reliability without paid APIs or hosted AI services.
-          </p>
-          <div class="tech-stack">
-            <span>TypeScript</span><span>React Native</span><span>Expo</span><span>Python</span><span>FastAPI</span><span>SQLite</span><span>SQLAlchemy</span><span>REST API</span><span>CLIP</span><span>SegFormer</span><span>NumPy</span><span>Docker</span><span>Vercel</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>LifeHub</h3>
-            <div class="project-links">
-              <a href="https://lifehub-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🔗 Live</a>
-              <a href="https://github.com/lsb40/LifeHub" target="_blank" rel="noopener noreferrer" class="project-link">💻 Code</a>
+            <div class="experience-content">
+              <h3>Software Engineer II</h3>
+              <p class="company">Deloitte</p>
+              <ul>
+                <li>Build and maintain five Python and SQL data pipelines in Azure DevOps, transforming data for production analytics across three enterprise applications.</li>
+                <li>Own Python and PostgreSQL services for KPI dashboards used by 200+ users, cutting load times from 12 seconds to 3 seconds through validation, schema, and query improvements.</li>
+                <li>Serve as technical point of contact for a 15-engineer offshore team and guide Azure VM performance tuning that reduced runtime by approximately 30%.</li>
+                <li>Architected a Python and OpenAI API service that generates 50 user stories per run, reducing a multi-day analysis process to minutes with retries, validation, and logging.</li>
+              </ul>
             </div>
-          </div>
-          <p class="project-desc">
-            LifeHub is a full-stack health & wellness platform: a vanilla ES6 + Tailwind SPA that renders Canvas-based analytics and works offline-first with local persistence and eventual sync to a Node/Express API. The service exposes versioned REST contracts (/api/v1) with strict request/response schema validation, idempotent writes, and a normalized error envelope; JWT auth and CORS hardening enforce per-user isolation; structured JSON logging and a /health probe support ops. Consistent resource models span nutrition, water, exercise, and mood. CI/CD ships from GitHub to Vercel with environment-scoped config and SPA routing; the repo is Docker-ready for multi-stage builds and a clean lift to managed Postgres with pooled connections as usage scales.
-          </p>
-          <div class="tech-stack">
-            <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Tailwind</span><span>Node.js</span><span>Express</span><span>REST API</span><span>JWT</span><span>Docker</span><span>PostgreSQL</span>
-          </div>
-        </div>
+          </article>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Decentralized Healthcare</h3>
-            <div class="project-links">
-              <a href="https://decentralized-healthcare.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🔗 Live</a>
-              <a href="https://github.com/lsb40/Decentralized-Healthcare" target="_blank" rel="noopener noreferrer" class="project-link">💻 Code</a>
+          <article class="experience-item reveal">
+            <div class="experience-meta">
+              <p class="experience-date">May 2023 – Aug 2023</p>
+              <p>Apex, North Carolina</p>
             </div>
-          </div>
-          <p class="project-desc">
-            Engineered a decentralized healthcare consulting web application leveraging React, Firebase Authentication, and Socket.io for secure, role-based access control and real-time, event-driven communication. Architected dynamic routing and stateful session management to support challenge creation, bid submission with temporal metadata, and per-project chat channels. Integrated modular UI components with conditional rendering and local persistence to enable authenticated user dashboards and lifecycle-managed challenge workflows.
-          </p>
-          <div class="tech-stack">
-            <span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>Socket.io</span><span>Firebase Auth</span><span>Firestore</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Personal Portfolio Website</h3>
-            <div class="project-links">
-              <a href="https://myweb-harshini-bandarus-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🔗 Live</a>
-              <a href="https://github.com/lsb40/myweb" target="_blank" rel="noopener noreferrer" class="project-link">💻 Code</a>
+            <div class="experience-content">
+              <h3>Software Engineering Intern</h3>
+              <p class="company">Pentair</p>
+              <ul>
+                <li>Architected an AI chatbot with a React Native frontend and Python backend, integrating REST APIs, OpenAI APIs, and AWS Lambda for scalable serverless inference.</li>
+                <li>Integrated the chatbot with IoT components, reduced latency by approximately 25% under load, and used 200+ Postman tests to reduce integration defects by approximately 30%.</li>
+              </ul>
             </div>
-          </div>
-          <p class="project-desc">
-            Designed and developed a responsive personal portfolio website showcasing my education, experience, projects, and technical skills. Built with HTML, CSS, and JavaScript, it features dark mode toggling, smooth scrolling navigation, and mobile-friendly layouts to enhance user experience.
-          </p>
-          <div class="tech-stack">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-        </div>
+          </article>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Sentiment Analysis Tool</h3>
-          </div>
-          <p class="project-desc">
-            Automated a movie sentiment analysis pipeline on Google Cloud Platform by leveraging Natural Language Processing and machine learning. Utilized Cloud Functions for serverless data ingestion and BigQuery for scalable data processing and interactive querying, enabling real-time insights on user movie reviews.
-          </p>
-          <div class="tech-stack">
-            <span>GCP</span><span>Python</span><span>Cloud Functions</span><span>BigQuery</span><span>NLP</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>MovieDB SQL Queries</h3>
-          </div>
-          <p class="project-desc">
-            Leveraged Python and SQLite to perform complex SQL queries on a movie database. Analyzed patterns in actor collaborations, movie rankings, and director styles to generate actionable insights and visualize trends in filmography data.
-          </p>
-          <div class="tech-stack">
-            <span>Python</span><span>SQLite</span><span>SQL</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Multi-Process Web Servers</h3>
-          </div>
-          <p class="project-desc">
-            Enhanced a basic single-threaded web server in C by implementing multi-processing with fork() and multi-threading with pthread_create(). Incorporated synchronization primitives to ensure thread safety, then benchmarked CPU time and throughput to analyze performance improvements.
-          </p>
-          <div class="tech-stack">
-            <span>C</span><span>Linux</span><span>Multi-threading</span><span>fork()</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Double-Buffered Graphics Library</h3>
-          </div>
-          <p class="project-desc">
-            Implemented a low-level graphics library in C utilizing Linux system calls to provide double buffering for smooth rendering. Managed input handling and efficient drawing operations to enable flicker-free graphical applications.
-          </p>
-          <div class="tech-stack">
-            <span>C</span><span>Linux</span><span>Graphics</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Airline System</h3>
-          </div>
-          <p class="project-desc">
-            Developed a Java-based airline management system incorporating graph algorithms like Dijkstra's shortest path and Breadth-First Search (BFS) for route planning. Enabled efficient scheduling, booking, and navigation of flight paths within the network.
-          </p>
-          <div class="tech-stack">
-            <span>Java</span><span>SQL</span><span>Graph Algorithms</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Nested Virtualization on GCP</h3>
-          </div>
-          <p class="project-desc">
-            Configured nested virtualization by running virtual machines inside virtual machines on Google Cloud Platform using KVM and QEMU. Demonstrated the ability to simulate complex multi-layered virtual environments for testing and development purposes.
-          </p>
-          <div class="tech-stack">
-            <span>GCP</span><span>KVM</span><span>QEMU</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Multi-Architecture Docker</h3>
-          </div>
-          <p class="project-desc">
-            Created a multi-architecture Docker image for a Node.js application to ensure consistent execution across different CPU platforms. Streamlined deployment processes and improved environment parity using containerization best practices.
-          </p>
-          <div class="tech-stack">
-            <span>Node.js</span><span>Docker</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Docker Compose Stack</h3>
-          </div>
-          <p class="project-desc">
-            Configured a multi-service Docker Compose setup to orchestrate a Flask backend API, Nginx reverse proxy, and MongoDB database. Defined isolated networks and persistent volumes to facilitate scalable development and deployment with clean separation of concerns.
-          </p>
-          <div class="tech-stack">
-            <span>Flask</span><span>Nginx</span><span>MongoDB</span><span>Docker Compose</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Kubernetes WordPress</h3>
-          </div>
-          <p class="project-desc">
-            Deployed a production-ready WordPress application on a local Kubernetes cluster using KinD (Kubernetes in Docker). Set up MySQL as a persistent backend with persistent volume claims, configured service discovery for internal communication, and ensured data durability across pod restarts.
-          </p>
-          <div class="tech-stack">
-            <span>Kubernetes</span><span>WordPress</span><span>MySQL</span><span>KinD</span>
-          </div>
-        </div>
-  
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Cloud Storage Static Site</h3>
-          </div>
-          <p class="project-desc">
-            Deployed a static website to Google Cloud Storage, integrating Continuous Integration/Continuous Deployment (CI/CD) pipelines with GitHub Actions. Automated build and deployment workflows to enable seamless and rapid updates to the site.
-          </p>
-          <div class="tech-stack">
-            <span>GCP</span><span>CI/CD</span><span>GitHub Actions</span>
-          </div>
+          <article class="experience-item reveal">
+            <div class="experience-meta">
+              <p class="experience-date">Jan 2023 – Apr 2023</p>
+              <p>Pittsburgh, Pennsylvania</p>
+            </div>
+            <div class="experience-content">
+              <h3>Software Engineering Intern</h3>
+              <p class="company">Federated Hermes</p>
+              <ul>
+                <li>Built Boomi ETL flows, XML mappings, transformation logic, and automated validations for certificate-expiration tracking, reducing manual intervention by approximately 95%.</li>
+                <li>Reviewed code across environments with Git and Visual Studio to improve deployment reliability and quality.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-meta">
+              <p class="experience-date">Jun 2022 – Aug 2022</p>
+              <p>Warrendale, Pennsylvania</p>
+            </div>
+            <div class="experience-content">
+              <h3>Software Engineering Intern</h3>
+              <p class="company">Federated Hermes</p>
+              <ul>
+                <li>Built Power Apps dashboards and Power BI reports on optimized ETL pipelines, increasing accessibility by 25%, efficiency by 20%, and reducing processing time by 50%.</li>
+                <li>Developed a Java and PostgreSQL project-management tool for task scheduling, meetings, and deadlines.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-meta">
+              <p class="experience-date">Jan 2022 – Apr 2022</p>
+              <p>Pittsburgh, Pennsylvania</p>
+            </div>
+            <div class="experience-content">
+              <h3>Computer Science Teaching Assistant</h3>
+              <p class="company">University of Pittsburgh</p>
+              <ul>
+                <li>Led weekly lectures for 20+ undergraduates on object-oriented programming and data structures, coaching students to strengthen problem-solving skills.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section class="section section-navy" id="projects">
+      <div class="container">
+        <div class="section-intro section-intro-light reveal">
+          <p class="section-kicker">Selected work</p>
+          <h2>Projects</h2>
+          <p>Full-stack applications and systems work grounded in security, performance, and real-world workflows.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-number">01</span>
+              <span class="project-date">July 2025</span>
+            </div>
+            <div class="project-body">
+              <h3>HealthConnect</h3>
+              <p>A healthcare consulting platform with role-based challenge workflows, anonymous consultant bidding, real-time updates, and isolated client-consultant conversations.</p>
+              <ul class="project-points">
+                <li>Firebase Authentication and Admin RBAC</li>
+                <li>Firestore-backed chat and live bid tracking</li>
+              </ul>
+            </div>
+            <div class="tech-list" aria-label="HealthConnect technologies">
+              <span>React</span><span>Node.js</span><span>Express</span><span>Socket.io</span><span>Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://decentralized-healthcare.vercel.app/" target="_blank" rel="noopener noreferrer">Live project <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/lsb40/Decentralized-Healthcare" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-number">02</span>
+              <span class="project-date">June 2025</span>
+            </div>
+            <div class="project-body">
+              <h3>LifeHub</h3>
+              <p>A full-stack health tracker for nutrition, hydration, exercise, and mood with secure authentication, per-user data isolation, and real-time visual analytics.</p>
+              <ul class="project-points">
+                <li>JWT authentication and password hashing</li>
+                <li>Canvas dashboard and containerized deployment</li>
+              </ul>
+            </div>
+            <div class="tech-list" aria-label="LifeHub technologies">
+              <span>JavaScript</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="https://lifehub-three.vercel.app/" target="_blank" rel="noopener noreferrer">Live project <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/lsb40/LifeHub" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-number">03</span>
+              <span class="project-date">October 2023</span>
+            </div>
+            <div class="project-body">
+              <h3>Concurrent Web Servers</h3>
+              <p>Two C++ HTTP server implementations exploring multithreaded and multiprocess architectures for dependable concurrent request handling.</p>
+              <ul class="project-points">
+                <li>fork(), pthreads, POSIX semaphores, and mutexes</li>
+                <li>Tested with up to 500 simultaneous requests</li>
+              </ul>
+            </div>
+            <div class="tech-list" aria-label="Concurrent web server technologies">
+              <span>C++</span><span>Linux</span><span>POSIX</span><span>pthreads</span><span>Concurrency</span>
+            </div>
+            <div class="project-links project-links-muted">
+              <span>Systems programming project</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="section-kicker">Capabilities</p>
+          <h2>Technical skills</h2>
+          <p>A practical toolkit spanning backend development, cloud delivery, full-stack applications, and AI-assisted engineering.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3>Languages</h3>
+            <p>Python, Go, Java, C, C++, SQL, JavaScript, TypeScript</p>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Tools &amp; Frameworks</h3>
+            <p>Flask, FastAPI, Node.js, React, Git, Docker</p>
+          </article>
+          <article class="skill-group reveal">
+            <h3>Cloud &amp; Deployment</h3>
+            <p>AWS, Google Cloud Platform, Kubernetes, Azure, CI/CD</p>
+          </article>
+          <article class="skill-group reveal">
+            <h3>AI Tools</h3>
+            <p>Claude Code, Codex, GitHub Copilot, Cursor, MCP</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-inner reveal">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s build something dependable.</h2>
+          <p>I’m always glad to connect about software engineering, backend systems, and thoughtful product work.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:bharshini33@gmail.com">bharshini33@gmail.com</a>
+          <a class="text-link" href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="currentYear">2026</span> Harshini Bandaru</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </div>
-  </section>
-  
+  </footer>
 
-  <section id="skills" class="section" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Tech Stack</span>
-        <h2 class="section-title">Skills & Technologies</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Programming Languages</h3>
-          <div class="skill-list">
-            <span class="skill-item">Java</span>
-            <span class="skill-item">Python</span>
-            <span class="skill-item">C</span>
-            <span class="skill-item">C++</span>
-            <span class="skill-item">JavaScript</span>
-            <span class="skill-item">TypeScript</span>
-            <span class="skill-item">SQL</span>
-            <span class="skill-item">HTML</span>
-            <span class="skill-item">CSS</span>
-            <span class="skill-item">R</span>
-            <span class="skill-item">Bash</span>
-            <span class="skill-item">JSON</span>
-            <span class="skill-item">XML</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Tools & Frameworks</h3>
-          <div class="skill-list">
-            <span class="skill-item">React</span>
-            <span class="skill-item">React Native</span>
-            <span class="skill-item">FastAPI</span>
-            <span class="skill-item">Flask</span>
-            <span class="skill-item">Node.js</span>
-            <span class="skill-item">Bootstrap</span>
-            <span class="skill-item">Tailwind CSS</span>
-            <span class="skill-item">Material UI</span>
-            <span class="skill-item">Figma</span>
-            <span class="skill-item">Firebase</span>
-            <span class="skill-item">Socket.IO</span>
-            <span class="skill-item">Postman</span>
-            <span class="skill-item">Docker</span>
-            <span class="skill-item">Docker Compose</span>
-            <span class="skill-item">Kubernetes</span>
-            <span class="skill-item">GitHub Actions</span>
-            <span class="skill-item">Boomi</span>
-            <span class="skill-item">Power Apps</span>
-            <span class="skill-item">Power BI</span>
-            <span class="skill-item">Git</span>
-            <span class="skill-item">IntelliJ</span>
-            <span class="skill-item">Visual Studio</span>
-            <span class="skill-item">MongoDB</span>
-            <span class="skill-item">MySQL</span>
-            <span class="skill-item">SQLite</span>
-            <span class="skill-item">Microsoft Visio</span>
-            <span class="skill-item">Jira</span>
-            <span class="skill-item">Confluence</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Technologies & Concepts</h3>
-          <div class="skill-list">
-            <span class="skill-item">AWS</span>
-            <span class="skill-item">Google Cloud Platform</span>
-            <span class="skill-item">Azure DevOps</span>
-            <span class="skill-item">RESTful API Design</span>
-            <span class="skill-item">CI/CD Pipelines</span>
-            <span class="skill-item">Authentication & RBAC</span>
-            <span class="skill-item">Object-Oriented Programming</span>
-            <span class="skill-item">Agile/Scrum</span>
-            <span class="skill-item">State Management</span>
-            <span class="skill-item">System Design</span>
-            <span class="skill-item">Testing & Debugging</span>
-            <span class="skill-item">Data Visualization</span>
-            <span class="skill-item">ETL Pipelines</span>
-            <span class="skill-item">Virtualization</span>
-            <span class="skill-item">DevOps Practices</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="hobbies" class="section section-alt" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Beyond Work</span>
-        <h2 class="section-title">Hobbies & Interests</h2>
-      </div>
-      <ul class="hobby-list">
-        <li>🎾 Tennis</li>
-        <li>🏋️‍♀️ Lifting</li>
-        <li>🥾 Hiking</li>
-        <li>🧁 Baking</li>
-        <li>🎨 Painting</li>
-        <li>🧶 DIY Crafts</li>
-        <li>🏓 Pickleball</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="leadership" class="section" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Community Involvement</span>
-        <h2 class="section-title">Leadership & Activities</h2>
-      </div>
-      <div class="leadership-content">
-        <p>As Vice President of the Minorities Association in Computing, I managed sponsorship collaborations, coordinated reimbursements, organized training programs, and fostered lasting relationships with sponsors to support community growth and inclusion.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section section-alt" data-animate>
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-label">Get In Touch</span>
-        <h2 class="section-title">Contact Me</h2>
-      </div>
-      <div class="contact-content">
-        <div class="contact-info">
-          <h3>Let's Connect</h3>
-          <p>Feel free to reach out for collaborations, job opportunities, or just to say hi!</p>
-          <div class="contact-links">
-            <a href="mailto:bharshini33@gmail.com" class="contact-link">
-              <span>📧</span>
-              <span>bharshini33@gmail.com</span>
-            </a>
-            <a href="https://www.linkedin.com/in/harshini-bandaru-100659220/" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <span>💼</span>
-              <span>Connect on LinkedIn</span>
-            </a>
-          </div>
-        </div>
-        <form action="https://formspree.io/f/mblkgyrk" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="form-submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

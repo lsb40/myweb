@@ -1,25 +1,26 @@
-# Harshini Bandaru Portfolio Website
+# Harshini Bandaru — Portfolio
 
-This is a personal portfolio website for Harshini Bandaru, showcasing education, work experience, projects, skills, hobbies, leadership, and contact information. The site features smooth scrolling, animated sections, a dark mode toggle, and an accessible contact info popup.
+A responsive, resume-aligned software engineering portfolio focused on backend systems, data platforms, cloud infrastructure, and selected full-stack work.
 
-## Features
+## Highlights
 
-- Responsive single-page design with fixed navigation
-- Section animations triggered on scroll
-- Smooth scrolling with active link highlighting
-- Dark mode toggle with persistent style changes
-- Accessible contact bubble with popup and keyboard support
-- Clean and modern UI built with HTML, CSS, and vanilla JavaScript
+- Formal single-page layout with sticky desktop navigation and an accessible mobile menu
+- Resume-backed experience, education, project, and skills content
+- Equal-height project cards across desktop, tablet, and mobile layouts
+- Keyboard-visible focus states, skip navigation, semantic HTML, and reduced-motion support
+- Lightweight implementation using HTML, CSS, and vanilla JavaScript
 
-## Technologies Used
+## Local preview
 
-- HTML
-- CSS
-- JavaScript
-- Google Fonts 
+Open `index.html` directly or serve the directory with any static file server. For example:
 
-## Live Demo
+```bash
+python3 -m http.server 8000
+```
 
-Check out the live site here:  
+Then visit `http://127.0.0.1:8000`.
+
+## Live site
+
 https://myweb-harshini-bandarus-projects.vercel.app/
 
