@@ -496,7 +496,10 @@ h3 {
 }
 
 .education-detail {
+  display: grid;
   grid-column: 1 / -1;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 40px;
   padding-top: 24px;
   border-top: 1px solid var(--line);
 }
@@ -588,7 +591,7 @@ h3 {
   display: grid;
   grid-template-rows: auto 1fr auto auto;
   height: 100%;
-  min-height: 560px;
+  min-height: 610px;
   padding: 28px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
@@ -661,7 +664,7 @@ h3 {
   flex-wrap: wrap;
   gap: 6px;
   align-content: flex-start;
-  min-height: 78px;
+  min-height: 112px;
   padding-bottom: 20px;
 }
 
@@ -734,6 +737,66 @@ h3 {
   line-height: 1.85;
 }
 
+.skill-group-wide {
+  grid-column: 1 / -1;
+  min-height: 160px;
+}
+
+.beyond-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.beyond-card {
+  min-height: 330px;
+  padding: clamp(28px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--navy-800);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-label {
+  margin-bottom: 22px;
+  color: var(--accent-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.beyond-card h3 {
+  max-width: 520px;
+  margin-bottom: 18px;
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+}
+
+.beyond-card > p:last-child {
+  margin-bottom: 0;
+  color: var(--slate);
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.interests-list li {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  color: #46586b;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .contact {
   padding: clamp(78px, 10vw, 120px) 0;
   background: var(--surface-warm);
@@ -751,7 +814,7 @@ h3 {
   margin-bottom: 18px;
 }
 
-.contact-inner > div > p:last-child {
+.contact-copy > p:last-of-type {
   max-width: 660px;
   margin-bottom: 0;
   color: var(--slate);
@@ -762,6 +825,7 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
+  margin-top: 30px;
 }
 
 .contact .button-primary {
@@ -782,6 +846,66 @@ h3 {
 
 .text-link:hover {
   color: var(--accent-dark);
+}
+
+.contact-form {
+  padding: clamp(26px, 4vw, 38px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--navy-800);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #cfd7df;
+  border-radius: 6px;
+  background: #fbfcfd;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.form-group input {
+  height: 46px;
+  padding: 0 13px;
+}
+
+.form-group textarea {
+  min-height: 132px;
+  padding: 11px 13px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  background: var(--paper);
+  box-shadow: 0 0 0 3px rgba(184, 129, 63, 0.14);
+}
+
+.contact-form .button {
+  border: 0;
+  cursor: pointer;
+}
+
+.contact-form .button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
 }
 
 .site-footer {
@@ -844,7 +968,7 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 900px) {
   :root {
     --header-height: 68px;
   }
@@ -986,6 +1110,8 @@ button:focus-visible {
 
   .education-detail {
     grid-column: auto;
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
 
   .experience-item {
@@ -995,13 +1121,18 @@ button:focus-visible {
   }
 
   .projects-grid,
-  .skills-grid {
+  .skills-grid,
+  .beyond-grid {
     grid-template-columns: 1fr;
   }
 
   .project-card {
-    min-height: 540px;
+    min-height: 610px;
     padding: 24px;
+  }
+
+  .skill-group-wide {
+    grid-column: auto;
   }
 
   .contact-actions,

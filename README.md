@@ -5,8 +5,10 @@ A responsive, resume-aligned software engineering portfolio focused on backend s
 ## Highlights
 
 - Formal single-page layout with sticky desktop navigation and an accessible mobile menu
-- Resume-backed experience, education, project, and skills content
+- Resume-accurate experience with the complete existing project catalog plus ClosetLocal
+- Comprehensive language, framework, database, cloud, tooling, concept, and AI skill coverage
 - Equal-height project cards across desktop, tablet, and mobile layouts
+- Leadership, interests, awards, and a working Formspree contact form
 - Keyboard-visible focus states, skip navigation, semantic HTML, and reduced-motion support
 - Lightweight implementation using HTML, CSS, and vanilla JavaScript
 

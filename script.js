@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 820) closeMenu();
+      if (window.innerWidth > 900) closeMenu();
     });
   }
 
@@ -87,4 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const currentYear = document.getElementById('currentYear');
   if (currentYear) currentYear.textContent = String(new Date().getFullYear());
+
+  const contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', () => {
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      if (!submitButton) return;
+      submitButton.textContent = 'Sending…';
+      submitButton.disabled = true;
+    });
+  }
 });
